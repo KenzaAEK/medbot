@@ -1,0 +1,24 @@
+# --- Environnement Virtuel (CRITIQUE) ---
+venv/
+.venv/
+env/
+.env
+
+# --- Fichiers système Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Données Volumineuses (Ne pas envoyer sur GitHub) ---
+# On garde la structure mais on ignore les gros fichiers
+data/raw/*.csv
+!data/raw/.gitkeep
+ollama/
+chroma_db/
+*.db
+*.sqlite3
+
+# --- Fichiers de configuration sensibles ---
+.env
+api_keys.py
