@@ -160,9 +160,15 @@ def main():
         g = create_ontology_structure(g)
         g = populate_knowledge_graph(g, data)
         
-        # Sauvegarde
+        # --- Sauvegarde en format Turtle (.ttl) ---
         output_ttl = os.path.join(ontology_dir, 'medical_ontology.ttl')
         g.serialize(destination=output_ttl, format='turtle')
+        print(f"Fichier Turtle généré : {output_ttl}")
+
+        # --- Sauvegarde en format RDF/XML (.owl) ---
+        output_owl = os.path.join(ontology_dir, 'medical_ontology.owl')
+        g.serialize(destination=output_owl, format='xml')
+        print(f"Fichier OWL (RDF/XML) généré : {output_owl}")
         
         print(f"SUCCÈS : Graphe généré avec {len(g)} triplets !")
         print(f"Fichier : {output_ttl}")
