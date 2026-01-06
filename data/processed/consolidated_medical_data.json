@@ -1,0 +1,1764 @@
+{
+  "diseases": [
+    {
+      "disease": "fungal infection",
+      "symptoms": [
+        {
+          "name": "itching",
+          "severity": 1
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        },
+        {
+          "name": "dischromic patches",
+          "severity": 6
+        },
+        {
+          "name": "nodal skin eruptions",
+          "severity": 4
+        }
+      ],
+      "specialty": "Dermatology",
+      "department": "Dermatology",
+      "urgency": "low",
+      "available_slots": 15
+    },
+    {
+      "disease": "allergy",
+      "symptoms": [
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "watering from eyes",
+          "severity": 4
+        },
+        {
+          "name": "continuous sneezing",
+          "severity": 4
+        },
+        {
+          "name": "shivering",
+          "severity": 5
+        }
+      ],
+      "specialty": "Allergology",
+      "department": "Internal Medicine",
+      "urgency": "low",
+      "available_slots": 20
+    },
+    {
+      "disease": "gerd",
+      "symptoms": [
+        {
+          "name": "chest pain",
+          "severity": 7
+        },
+        {
+          "name": "cough",
+          "severity": 4
+        },
+        {
+          "name": "ulcers on tongue",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "acidity",
+          "severity": 3
+        },
+        {
+          "name": "stomach pain",
+          "severity": 5
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "department": "Gastroenterology",
+      "urgency": "medium",
+      "available_slots": 12
+    },
+    {
+      "disease": "chronic cholestasis",
+      "symptoms": [
+        {
+          "name": "itching",
+          "severity": 1
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "medium",
+      "available_slots": 8
+    },
+    {
+      "disease": "drug reaction",
+      "symptoms": [
+        {
+          "name": "itching",
+          "severity": 1
+        },
+        {
+          "name": "spotting urination",
+          "severity": 6
+        },
+        {
+          "name": "burning micturition",
+          "severity": 6
+        },
+        {
+          "name": "stomach pain",
+          "severity": 5
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        }
+      ],
+      "specialty": "Allergology",
+      "department": "Emergency",
+      "urgency": "high",
+      "available_slots": 5
+    },
+    {
+      "disease": "peptic ulcer disease",
+      "symptoms": [
+        {
+          "name": "internal itching",
+          "severity": 4
+        },
+        {
+          "name": "indigestion",
+          "severity": 5
+        },
+        {
+          "name": "passage of gases",
+          "severity": 5
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "department": "Gastroenterology",
+      "urgency": "medium",
+      "available_slots": 10
+    },
+    {
+      "disease": "aids",
+      "symptoms": [
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "extra marital contacts",
+          "severity": 5
+        },
+        {
+          "name": "muscle wasting",
+          "severity": 3
+        },
+        {
+          "name": "patches in throat",
+          "severity": 6
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "department": "Infectious Disease",
+      "urgency": "high",
+      "available_slots": 3
+    },
+    {
+      "disease": "diabetes",
+      "symptoms": [
+        {
+          "name": "restlessness",
+          "severity": 5
+        },
+        {
+          "name": "obesity",
+          "severity": 4
+        },
+        {
+          "name": "excessive hunger",
+          "severity": 4
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "blurred and distorted vision",
+          "severity": 5
+        },
+        {
+          "name": "polyuria",
+          "severity": 4
+        },
+        {
+          "name": "increased appetite",
+          "severity": 5
+        },
+        {
+          "name": "lethargy",
+          "severity": 2
+        },
+        {
+          "name": "irregular sugar level",
+          "severity": 5
+        },
+        {
+          "name": "weight loss",
+          "severity": 3
+        }
+      ],
+      "specialty": "Endocrinology",
+      "department": "Endocrinology",
+      "urgency": "medium",
+      "available_slots": 18
+    },
+    {
+      "disease": "gastroenteritis",
+      "symptoms": [
+        {
+          "name": "sunken eyes",
+          "severity": 3
+        },
+        {
+          "name": "diarrhoea",
+          "severity": 6
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "dehydration",
+          "severity": 4
+        }
+      ],
+      "specialty": "Gastroenterology",
+      "department": "Gastroenterology",
+      "urgency": "medium",
+      "available_slots": 14
+    },
+    {
+      "disease": "bronchial asthma",
+      "symptoms": [
+        {
+          "name": "family history",
+          "severity": 5
+        },
+        {
+          "name": "cough",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "mucoid sputum",
+          "severity": 4
+        },
+        {
+          "name": "breathlessness",
+          "severity": 4
+        }
+      ],
+      "specialty": "Pulmonology",
+      "department": "Pulmonology",
+      "urgency": "medium",
+      "available_slots": 16
+    },
+    {
+      "disease": "hypertension",
+      "symptoms": [
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "chest pain",
+          "severity": 7
+        },
+        {
+          "name": "lack of concentration",
+          "severity": 3
+        },
+        {
+          "name": "loss of balance",
+          "severity": 4
+        },
+        {
+          "name": "dizziness",
+          "severity": 4
+        }
+      ],
+      "specialty": "Cardiology",
+      "department": "Cardiology",
+      "urgency": "medium",
+      "available_slots": 12
+    },
+    {
+      "disease": "migraine",
+      "symptoms": [
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "excessive hunger",
+          "severity": 4
+        },
+        {
+          "name": "irritability",
+          "severity": 2
+        },
+        {
+          "name": "blurred and distorted vision",
+          "severity": 5
+        },
+        {
+          "name": "depression",
+          "severity": 3
+        },
+        {
+          "name": "indigestion",
+          "severity": 5
+        },
+        {
+          "name": "visual disturbances",
+          "severity": 3
+        },
+        {
+          "name": "acidity",
+          "severity": 3
+        },
+        {
+          "name": "stiff neck",
+          "severity": 4
+        }
+      ],
+      "specialty": "Neurology",
+      "department": "Neurology",
+      "urgency": "low",
+      "available_slots": 20
+    },
+    {
+      "disease": "cervical spondylosis",
+      "symptoms": [
+        {
+          "name": "weakness in limbs",
+          "severity": 7
+        },
+        {
+          "name": "neck pain",
+          "severity": 5
+        },
+        {
+          "name": "loss of balance",
+          "severity": 4
+        },
+        {
+          "name": "back pain",
+          "severity": 3
+        },
+        {
+          "name": "dizziness",
+          "severity": 4
+        }
+      ],
+      "specialty": "Orthopedics",
+      "department": "Orthopedics",
+      "urgency": "low",
+      "available_slots": 15
+    },
+    {
+      "disease": "paralysis (brain hemorrhage)",
+      "symptoms": [
+        {
+          "name": "altered sensorium",
+          "severity": 2
+        },
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "weakness of one body side",
+          "severity": 4
+        }
+      ],
+      "specialty": "Neurology",
+      "department": "Emergency",
+      "urgency": "high",
+      "available_slots": 2
+    },
+    {
+      "disease": "jaundice",
+      "symptoms": [
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "itching",
+          "severity": 1
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "dark urine",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "weight loss",
+          "severity": 3
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "medium",
+      "available_slots": 10
+    },
+    {
+      "disease": "malaria",
+      "symptoms": [
+        {
+          "name": "sweating",
+          "severity": 3
+        },
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "diarrhoea",
+          "severity": 6
+        },
+        {
+          "name": "muscle pain",
+          "severity": 2
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "department": "Infectious Disease",
+      "urgency": "high",
+      "available_slots": 8
+    },
+    {
+      "disease": "chicken pox",
+      "symptoms": [
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "itching",
+          "severity": 1
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "malaise",
+          "severity": 6
+        },
+        {
+          "name": "swelled lymph nodes",
+          "severity": 6
+        },
+        {
+          "name": "mild fever",
+          "severity": 5
+        },
+        {
+          "name": "lethargy",
+          "severity": 2
+        },
+        {
+          "name": "red spots over body",
+          "severity": 3
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "department": "Infectious Disease",
+      "urgency": "medium",
+      "available_slots": 10
+    },
+    {
+      "disease": "dengue",
+      "symptoms": [
+        {
+          "name": "joint pain",
+          "severity": 3
+        },
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "back pain",
+          "severity": 3
+        },
+        {
+          "name": "malaise",
+          "severity": 6
+        },
+        {
+          "name": "muscle pain",
+          "severity": 2
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "pain behind the eyes",
+          "severity": 4
+        },
+        {
+          "name": "red spots over body",
+          "severity": 3
+        },
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "department": "Infectious Disease",
+      "urgency": "high",
+      "available_slots": 6
+    },
+    {
+      "disease": "typhoid",
+      "symptoms": [
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "belly pain",
+          "severity": 4
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "diarrhoea",
+          "severity": 6
+        },
+        {
+          "name": "constipation",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "toxic look (typhos)",
+          "severity": 5
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Infectious Disease",
+      "department": "Infectious Disease",
+      "urgency": "high",
+      "available_slots": 7
+    },
+    {
+      "disease": "hepatitis a",
+      "symptoms": [
+        {
+          "name": "joint pain",
+          "severity": 3
+        },
+        {
+          "name": "dark urine",
+          "severity": 4
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "diarrhoea",
+          "severity": 6
+        },
+        {
+          "name": "muscle pain",
+          "severity": 2
+        },
+        {
+          "name": "mild fever",
+          "severity": 5
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "high",
+      "available_slots": 5
+    },
+    {
+      "disease": "hepatitis b",
+      "symptoms": [
+        {
+          "name": "receiving unsterile injections",
+          "severity": 2
+        },
+        {
+          "name": "dark urine",
+          "severity": 4
+        },
+        {
+          "name": "itching",
+          "severity": 1
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "receiving blood transfusion",
+          "severity": 5
+        },
+        {
+          "name": "malaise",
+          "severity": 6
+        },
+        {
+          "name": "lethargy",
+          "severity": 2
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "yellow urine",
+          "severity": 4
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "high",
+      "available_slots": 4
+    },
+    {
+      "disease": "hepatitis c",
+      "symptoms": [
+        {
+          "name": "family history",
+          "severity": 5
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "high",
+      "available_slots": 4
+    },
+    {
+      "disease": "hepatitis d",
+      "symptoms": [
+        {
+          "name": "joint pain",
+          "severity": 3
+        },
+        {
+          "name": "dark urine",
+          "severity": 4
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "high",
+      "available_slots": 3
+    },
+    {
+      "disease": "hepatitis e",
+      "symptoms": [
+        {
+          "name": "joint pain",
+          "severity": 3
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "dark urine",
+          "severity": 4
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "coma",
+          "severity": 7
+        },
+        {
+          "name": "acute liver failure",
+          "severity": 6
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "stomach bleeding",
+          "severity": 6
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "high",
+      "available_slots": 3
+    },
+    {
+      "disease": "alcoholic hepatitis",
+      "symptoms": [
+        {
+          "name": "distention of abdomen",
+          "severity": 4
+        },
+        {
+          "name": "history of alcohol consumption",
+          "severity": 5
+        },
+        {
+          "name": "swelling of stomach",
+          "severity": 7
+        },
+        {
+          "name": "fluid overload",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "yellowish skin",
+          "severity": 3
+        },
+        {
+          "name": "abdominal pain",
+          "severity": 4
+        }
+      ],
+      "specialty": "Hepatology",
+      "department": "Gastroenterology",
+      "urgency": "high",
+      "available_slots": 5
+    },
+    {
+      "disease": "tuberculosis",
+      "symptoms": [
+        {
+          "name": "sweating",
+          "severity": 3
+        },
+        {
+          "name": "chest pain",
+          "severity": 7
+        },
+        {
+          "name": "cough",
+          "severity": 4
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "weight loss",
+          "severity": 3
+        },
+        {
+          "name": "loss of appetite",
+          "severity": 4
+        },
+        {
+          "name": "malaise",
+          "severity": 6
+        },
+        {
+          "name": "swelled lymph nodes",
+          "severity": 6
+        },
+        {
+          "name": "mild fever",
+          "severity": 5
+        },
+        {
+          "name": "phlegm",
+          "severity": 5
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "breathlessness",
+          "severity": 4
+        },
+        {
+          "name": "yellowing of eyes",
+          "severity": 4
+        },
+        {
+          "name": "blood in sputum",
+          "severity": 5
+        }
+      ],
+      "specialty": "Pulmonology",
+      "department": "Infectious Disease",
+      "urgency": "high",
+      "available_slots": 6
+    },
+    {
+      "disease": "common cold",
+      "symptoms": [
+        {
+          "name": "loss of smell",
+          "severity": 3
+        },
+        {
+          "name": "throat irritation",
+          "severity": 4
+        },
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "redness of eyes",
+          "severity": 5
+        },
+        {
+          "name": "congestion",
+          "severity": 5
+        },
+        {
+          "name": "chest pain",
+          "severity": 7
+        },
+        {
+          "name": "cough",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "sinus pressure",
+          "severity": 4
+        },
+        {
+          "name": "muscle pain",
+          "severity": 2
+        },
+        {
+          "name": "malaise",
+          "severity": 6
+        },
+        {
+          "name": "swelled lymph nodes",
+          "severity": 6
+        },
+        {
+          "name": "continuous sneezing",
+          "severity": 4
+        },
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "phlegm",
+          "severity": 5
+        },
+        {
+          "name": "runny nose",
+          "severity": 5
+        }
+      ],
+      "specialty": "General Practice",
+      "department": "General Medicine",
+      "urgency": "low",
+      "available_slots": 25
+    },
+    {
+      "disease": "pneumonia",
+      "symptoms": [
+        {
+          "name": "sweating",
+          "severity": 3
+        },
+        {
+          "name": "fast heart rate",
+          "severity": 5
+        },
+        {
+          "name": "chest pain",
+          "severity": 7
+        },
+        {
+          "name": "cough",
+          "severity": 4
+        },
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "malaise",
+          "severity": 6
+        },
+        {
+          "name": "phlegm",
+          "severity": 5
+        },
+        {
+          "name": "rusty sputum",
+          "severity": 4
+        },
+        {
+          "name": "chills",
+          "severity": 3
+        },
+        {
+          "name": "breathlessness",
+          "severity": 4
+        }
+      ],
+      "specialty": "Pulmonology",
+      "department": "Pulmonology",
+      "urgency": "high",
+      "available_slots": 8
+    },
+    {
+      "disease": "dimorphic hemmorhoids",
+      "symptoms": [
+        {
+          "name": "pain during bowel movements",
+          "severity": 5
+        },
+        {
+          "name": "irritation in anus",
+          "severity": 6
+        },
+        {
+          "name": "bloody stool",
+          "severity": 5
+        },
+        {
+          "name": "constipation",
+          "severity": 4
+        },
+        {
+          "name": "pain in anal region",
+          "severity": 6
+        }
+      ],
+      "specialty": "Proctology",
+      "department": "Surgery",
+      "urgency": "medium",
+      "available_slots": 10
+    },
+    {
+      "disease": "heart attack",
+      "symptoms": [
+        {
+          "name": "breathlessness",
+          "severity": 4
+        },
+        {
+          "name": "sweating",
+          "severity": 3
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "chest pain",
+          "severity": 7
+        }
+      ],
+      "specialty": "Cardiology",
+      "department": "Emergency",
+      "urgency": "high",
+      "available_slots": 1
+    },
+    {
+      "disease": "varicose veins",
+      "symptoms": [
+        {
+          "name": "obesity",
+          "severity": 4
+        },
+        {
+          "name": "swollen legs",
+          "severity": 5
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "swollen blood vessels",
+          "severity": 5
+        },
+        {
+          "name": "cramps",
+          "severity": 4
+        },
+        {
+          "name": "bruising",
+          "severity": 4
+        },
+        {
+          "name": "prominent veins on calf",
+          "severity": 6
+        }
+      ],
+      "specialty": "Vascular Surgery",
+      "department": "Surgery",
+      "urgency": "low",
+      "available_slots": 12
+    },
+    {
+      "disease": "hypothyroidism",
+      "symptoms": [
+        {
+          "name": "irritability",
+          "severity": 2
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "depression",
+          "severity": 3
+        },
+        {
+          "name": "abnormal menstruation",
+          "severity": 6
+        },
+        {
+          "name": "cold hands and feets",
+          "severity": 5
+        },
+        {
+          "name": "weight gain",
+          "severity": 3
+        },
+        {
+          "name": "lethargy",
+          "severity": 2
+        },
+        {
+          "name": "swollen extremeties",
+          "severity": 5
+        },
+        {
+          "name": "puffy face and eyes",
+          "severity": 5
+        },
+        {
+          "name": "brittle nails",
+          "severity": 5
+        },
+        {
+          "name": "mood swings",
+          "severity": 3
+        },
+        {
+          "name": "dizziness",
+          "severity": 4
+        },
+        {
+          "name": "enlarged thyroid",
+          "severity": 6
+        }
+      ],
+      "specialty": "Endocrinology",
+      "department": "Endocrinology",
+      "urgency": "medium",
+      "available_slots": 15
+    },
+    {
+      "disease": "hyperthyroidism",
+      "symptoms": [
+        {
+          "name": "restlessness",
+          "severity": 5
+        },
+        {
+          "name": "sweating",
+          "severity": 3
+        },
+        {
+          "name": "fast heart rate",
+          "severity": 5
+        },
+        {
+          "name": "excessive hunger",
+          "severity": 4
+        },
+        {
+          "name": "irritability",
+          "severity": 2
+        },
+        {
+          "name": "muscle weakness",
+          "severity": 2
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "abnormal menstruation",
+          "severity": 6
+        },
+        {
+          "name": "diarrhoea",
+          "severity": 6
+        },
+        {
+          "name": "weight loss",
+          "severity": 3
+        },
+        {
+          "name": "mood swings",
+          "severity": 3
+        }
+      ],
+      "specialty": "Endocrinology",
+      "department": "Endocrinology",
+      "urgency": "medium",
+      "available_slots": 14
+    },
+    {
+      "disease": "hypoglycemia",
+      "symptoms": [
+        {
+          "name": "sweating",
+          "severity": 3
+        },
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "excessive hunger",
+          "severity": 4
+        },
+        {
+          "name": "drying and tingling lips",
+          "severity": 4
+        },
+        {
+          "name": "irritability",
+          "severity": 2
+        },
+        {
+          "name": "fatigue",
+          "severity": 4
+        },
+        {
+          "name": "blurred and distorted vision",
+          "severity": 5
+        },
+        {
+          "name": "palpitations",
+          "severity": 4
+        },
+        {
+          "name": "slurred speech",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "anxiety",
+          "severity": 4
+        }
+      ],
+      "specialty": "Endocrinology",
+      "department": "Emergency",
+      "urgency": "high",
+      "available_slots": 5
+    },
+    {
+      "disease": "osteoarthristis",
+      "symptoms": [
+        {
+          "name": "joint pain",
+          "severity": 3
+        },
+        {
+          "name": "neck pain",
+          "severity": 5
+        },
+        {
+          "name": "hip joint pain",
+          "severity": 2
+        },
+        {
+          "name": "swelling joints",
+          "severity": 5
+        },
+        {
+          "name": "knee pain",
+          "severity": 3
+        },
+        {
+          "name": "painful walking",
+          "severity": 2
+        }
+      ],
+      "specialty": "Rheumatology",
+      "department": "Rheumatology",
+      "urgency": "low",
+      "available_slots": 18
+    },
+    {
+      "disease": "arthritis",
+      "symptoms": [
+        {
+          "name": "stiff neck",
+          "severity": 4
+        },
+        {
+          "name": "muscle weakness",
+          "severity": 2
+        },
+        {
+          "name": "movement stiffness",
+          "severity": 5
+        },
+        {
+          "name": "swelling joints",
+          "severity": 5
+        },
+        {
+          "name": "painful walking",
+          "severity": 2
+        }
+      ],
+      "specialty": "Rheumatology",
+      "department": "Rheumatology",
+      "urgency": "medium",
+      "available_slots": 16
+    },
+    {
+      "disease": "paroxysmal positional vertigo",
+      "symptoms": [
+        {
+          "name": "headache",
+          "severity": 3
+        },
+        {
+          "name": "spinning movements",
+          "severity": 6
+        },
+        {
+          "name": "loss of balance",
+          "severity": 4
+        },
+        {
+          "name": "vomiting",
+          "severity": 5
+        },
+        {
+          "name": "nausea",
+          "severity": 5
+        },
+        {
+          "name": "unsteadiness",
+          "severity": 4
+        }
+      ],
+      "specialty": "ENT",
+      "department": "ENT",
+      "urgency": "medium",
+      "available_slots": 12
+    },
+    {
+      "disease": "acne",
+      "symptoms": [
+        {
+          "name": "blackheads",
+          "severity": 2
+        },
+        {
+          "name": "scurring",
+          "severity": 2
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        },
+        {
+          "name": "pus filled pimples",
+          "severity": 2
+        }
+      ],
+      "specialty": "Dermatology",
+      "department": "Dermatology",
+      "urgency": "low",
+      "available_slots": 20
+    },
+    {
+      "disease": "urinary tract infection",
+      "symptoms": [
+        {
+          "name": "continuous feel of urine",
+          "severity": 6
+        },
+        {
+          "name": "foul smell of urine",
+          "severity": 3
+        },
+        {
+          "name": "bladder discomfort",
+          "severity": 4
+        },
+        {
+          "name": "burning micturition",
+          "severity": 6
+        }
+      ],
+      "specialty": "Urology",
+      "department": "Urology",
+      "urgency": "medium",
+      "available_slots": 14
+    },
+    {
+      "disease": "psoriasis",
+      "symptoms": [
+        {
+          "name": "joint pain",
+          "severity": 3
+        },
+        {
+          "name": "small dents in nails",
+          "severity": 2
+        },
+        {
+          "name": "silver like dusting",
+          "severity": 2
+        },
+        {
+          "name": "skin peeling",
+          "severity": 3
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        },
+        {
+          "name": "inflammatory nails",
+          "severity": 2
+        }
+      ],
+      "specialty": "Dermatology",
+      "department": "Dermatology",
+      "urgency": "low",
+      "available_slots": 15
+    },
+    {
+      "disease": "impetigo",
+      "symptoms": [
+        {
+          "name": "high fever",
+          "severity": 7
+        },
+        {
+          "name": "blister",
+          "severity": 4
+        },
+        {
+          "name": "red sore around nose",
+          "severity": 2
+        },
+        {
+          "name": "skin rash",
+          "severity": 3
+        },
+        {
+          "name": "yellow crust ooze",
+          "severity": 3
+        }
+      ],
+      "specialty": "Dermatology",
+      "department": "Dermatology",
+      "urgency": "low",
+      "available_slots": 18
+    }
+  ],
+  "departments": [
+    {
+      "Department": "Emergency",
+      "Location": "Building A",
+      "Floor": "Ground Floor",
+      "OpeningHours": "24/7",
+      "Phone": "+212-5XX-XXXX01"
+    },
+    {
+      "Department": "Cardiology",
+      "Location": "Building B",
+      "Floor": "2nd Floor",
+      "OpeningHours": "08:00-20:00",
+      "Phone": "+212-5XX-XXXX02"
+    },
+    {
+      "Department": "Gastroenterology",
+      "Location": "Building B",
+      "Floor": "3rd Floor",
+      "OpeningHours": "08:00-18:00",
+      "Phone": "+212-5XX-XXXX03"
+    },
+    {
+      "Department": "Dermatology",
+      "Location": "Building C",
+      "Floor": "1st Floor",
+      "OpeningHours": "09:00-17:00",
+      "Phone": "+212-5XX-XXXX04"
+    },
+    {
+      "Department": "Neurology",
+      "Location": "Building A",
+      "Floor": "4th Floor",
+      "OpeningHours": "08:00-19:00",
+      "Phone": "+212-5XX-XXXX05"
+    },
+    {
+      "Department": "Orthopedics",
+      "Location": "Building D",
+      "Floor": "Ground Floor",
+      "OpeningHours": "08:00-18:00",
+      "Phone": "+212-5XX-XXXX06"
+    },
+    {
+      "Department": "Pulmonology",
+      "Location": "Building B",
+      "Floor": "4th Floor",
+      "OpeningHours": "08:00-18:00",
+      "Phone": "+212-5XX-XXXX07"
+    },
+    {
+      "Department": "Endocrinology",
+      "Location": "Building C",
+      "Floor": "2nd Floor",
+      "OpeningHours": "08:00-17:00",
+      "Phone": "+212-5XX-XXXX08"
+    },
+    {
+      "Department": "Infectious Disease",
+      "Location": "Building A",
+      "Floor": "3rd Floor",
+      "OpeningHours": "24/7",
+      "Phone": "+212-5XX-XXXX09"
+    },
+    {
+      "Department": "Internal Medicine",
+      "Location": "Building B",
+      "Floor": "1st Floor",
+      "OpeningHours": "08:00-20:00",
+      "Phone": "+212-5XX-XXXX10"
+    },
+    {
+      "Department": "Urology",
+      "Location": "Building D",
+      "Floor": "2nd Floor",
+      "OpeningHours": "08:00-17:00",
+      "Phone": "+212-5XX-XXXX11"
+    },
+    {
+      "Department": "Rheumatology",
+      "Location": "Building C",
+      "Floor": "3rd Floor",
+      "OpeningHours": "09:00-17:00",
+      "Phone": "+212-5XX-XXXX12"
+    },
+    {
+      "Department": "ENT",
+      "Location": "Building D",
+      "Floor": "1st Floor",
+      "OpeningHours": "08:00-18:00",
+      "Phone": "+212-5XX-XXXX13"
+    },
+    {
+      "Department": "Surgery",
+      "Location": "Building A",
+      "Floor": "5th Floor",
+      "OpeningHours": "24/7",
+      "Phone": "+212-5XX-XXXX14"
+    },
+    {
+      "Department": "General Medicine",
+      "Location": "Building B",
+      "Floor": "Ground Floor",
+      "OpeningHours": "08:00-20:00",
+      "Phone": "+212-5XX-XXXX15"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# LangChain, Connecteurs et BDD
+langchain
+langchain-community
+langchain-chroma
+chromadb
+
+# PDF Loader
+pypdf
+pdfplumber
+
+# API
+fastapi
+uvicorn
+
+# LLM Local
+ollama
+
+# Outil Front-end (pour le MVP)
+streamlit

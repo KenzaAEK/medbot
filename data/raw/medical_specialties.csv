@@ -1,0 +1,42 @@
+Disease,Specialty,Department,Urgency,AvailableSlots
+Fungal infection,Dermatology,Dermatology,low,15
+Allergy,Allergology,Internal Medicine,low,20
+GERD,Gastroenterology,Gastroenterology,medium,12
+Chronic cholestasis,Hepatology,Gastroenterology,medium,8
+Drug Reaction,Allergology,Emergency,high,5
+Peptic ulcer disease,Gastroenterology,Gastroenterology,medium,10
+AIDS,Infectious Disease,Infectious Disease,high,3
+Diabetes,Endocrinology,Endocrinology,medium,18
+Gastroenteritis,Gastroenterology,Gastroenterology,medium,14
+Bronchial Asthma,Pulmonology,Pulmonology,medium,16
+Hypertension,Cardiology,Cardiology,medium,12
+Migraine,Neurology,Neurology,low,20
+Cervical spondylosis,Orthopedics,Orthopedics,low,15
+Paralysis (brain hemorrhage),Neurology,Emergency,high,2
+Jaundice,Hepatology,Gastroenterology,medium,10
+Malaria,Infectious Disease,Infectious Disease,high,8
+Chicken pox,Infectious Disease,Infectious Disease,medium,10
+Dengue,Infectious Disease,Infectious Disease,high,6
+Typhoid,Infectious Disease,Infectious Disease,high,7
+Hepatitis A,Hepatology,Gastroenterology,high,5
+Hepatitis B,Hepatology,Gastroenterology,high,4
+Hepatitis C,Hepatology,Gastroenterology,high,4
+Hepatitis D,Hepatology,Gastroenterology,high,3
+Hepatitis E,Hepatology,Gastroenterology,high,3
+Alcoholic hepatitis,Hepatology,Gastroenterology,high,5
+Tuberculosis,Pulmonology,Infectious Disease,high,6
+Common Cold,General Practice,General Medicine,low,25
+Pneumonia,Pulmonology,Pulmonology,high,8
+Dimorphic hemmorhoids(piles),Proctology,Surgery,medium,10
+Heart attack,Cardiology,Emergency,high,1
+Varicose veins,Vascular Surgery,Surgery,low,12
+Hypothyroidism,Endocrinology,Endocrinology,medium,15
+Hyperthyroidism,Endocrinology,Endocrinology,medium,14
+Hypoglycemia,Endocrinology,Emergency,high,5
+Osteoarthristis,Rheumatology,Rheumatology,low,18
+Arthritis,Rheumatology,Rheumatology,medium,16
+(vertigo) Paroymsal Positional Vertigo,ENT,ENT,medium,12
+Acne,Dermatology,Dermatology,low,20
+Urinary tract infection,Urology,Urology,medium,14
+Psoriasis,Dermatology,Dermatology,low,15
+Impetigo,Dermatology,Dermatology,low,18

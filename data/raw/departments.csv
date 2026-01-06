@@ -1,0 +1,16 @@
+Department,Location,Floor,OpeningHours,Phone
+Emergency,Building A,Ground Floor,24/7,+212-5XX-XXXX01
+Cardiology,Building B,2nd Floor,08:00-20:00,+212-5XX-XXXX02
+Gastroenterology,Building B,3rd Floor,08:00-18:00,+212-5XX-XXXX03
+Dermatology,Building C,1st Floor,09:00-17:00,+212-5XX-XXXX04
+Neurology,Building A,4th Floor,08:00-19:00,+212-5XX-XXXX05
+Orthopedics,Building D,Ground Floor,08:00-18:00,+212-5XX-XXXX06
+Pulmonology,Building B,4th Floor,08:00-18:00,+212-5XX-XXXX07
+Endocrinology,Building C,2nd Floor,08:00-17:00,+212-5XX-XXXX08
+Infectious Disease,Building A,3rd Floor,24/7,+212-5XX-XXXX09
+Internal Medicine,Building B,1st Floor,08:00-20:00,+212-5XX-XXXX10
+Urology,Building D,2nd Floor,08:00-17:00,+212-5XX-XXXX11
+Rheumatology,Building C,3rd Floor,09:00-17:00,+212-5XX-XXXX12
+ENT,Building D,1st Floor,08:00-18:00,+212-5XX-XXXX13
+Surgery,Building A,5th Floor,24/7,+212-5XX-XXXX14
+General Medicine,Building B,Ground Floor,08:00-20:00,+212-5XX-XXXX15

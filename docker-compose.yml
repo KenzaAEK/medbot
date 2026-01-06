@@ -1,32 +1,44 @@
 version: '3.8'
 
 services:
-  # 1. Le MOTEUR LLM (Ollama)
+  # Service 1 : LLM Engine
   ollama:
-    image: ollama/ollama
-    container_name: ollama_llm_service
+    image: ollama/ollama:latest
+    container_name: startguide_ollama
     restart: always
-    # IMPORTANT: Assure la persistance du modèle et de ChromaDB sur ton disque
     volumes:
-      - C:\ollama\data:/root
-    # Expose le port pour l'accès local et interne
+      - ollama_storage:/root/.ollama  # Volume dédié aux modèles (Mistral)
     ports:
       - "11434:11434"
+    networks:
+      - rag_network
 
-  # 2. L'APPLICATION RAG (Ton code Python/LangChain)
+  # Service 2 : RAG Backend
   app_rag:
     build: .
-    container_name: startguide_ai_app
-    # Le conteneur doit attendre qu'Ollama soit démarré
+    container_name: startguide_backend
     depends_on:
       - ollama
-    # Assure que le code peut voir et accéder au volume de données
     volumes:
-      - ./app:/app/app       # Monte le code local pour faciliter le développement
-      - ./data:/app/data
-      - C:\ollama\data:/root/data  # Point d'accès à la BDD Chroma
-    # Commande de démarrage (on utilisera uvicorn pour FastAPI plus tard)
-    command: ["tail", "-f", "/dev/null"] # Conserve le conteneur actif pour le moment
+      - ./data:/app/data             # Montage des PDF (Lecture seule recommandée en prod)
+      - chroma_storage:/app/chroma_db # Volume dédié à la base vectorielle persistante
+      # On garde le montage du code pour le dev (à retirer en prod)
+      - ./app:/app/app
     environment:
-      # Variable d'environnement pour que LangChain sache où trouver Ollama
-      - OLLAMA_HOST=http://ollama:11434 # 'ollama' est le nom du service Docker
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - CHROMA_DB_DIR=/app/chroma_db
+    ports:
+      - "8000:8000"
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    networks:
+      - rag_network
+
+# Définition des volumes persistants
+volumes:
+  ollama_storage:
+  chroma_storage:
+
+# Réseau isolé
+networks:
+  rag_network:
+    driver: bridge
