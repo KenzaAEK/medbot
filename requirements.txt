@@ -1,19 +1,31 @@
-# LangChain, Connecteurs et BDD
+# --- Cœur Web Sémantique (Indispensable) ---
+rdflib>=7.0.0           # Pour gérer le Graphe RDF et SPARQL
+
+# --- NLP & Extraction (Indispensable) ---
+spacy>=3.7.0            # Pour reconnaître les symptômes dans le texte
+
+# --- Data Processing ---
+pandas>=2.0.0           # Pour manipuler tes CSV/JSON
+numpy
+matplotlib              # Pour les graphiques du rapport
+seaborn
+
+# --- RAG & LLM (LangChain) ---
 langchain
 langchain-community
-langchain-chroma
-chromadb
+langchain-chroma        # connecteur spécifique Chroma (récent)
+chromadb                # Base vectorielle
 
-# PDF Loader
-pypdf
-pdfplumber
+# --- Chargement de Documents (Ton ancien code) ---
+pypdf                   # Pour lire les PDFs (Brochures médicales)
+pdfplumber              # Alternative robuste pour les PDFs
 
-# API
+# --- Backend & API ---
 fastapi
 uvicorn
+python-multipart        # Requis pour l'upload de fichiers
 
-# LLM Local
-ollama
-
-# Outil Front-end (pour le MVP)
+# --- Interface ---
 streamlit
+watchdog                # Pour le reload auto
+

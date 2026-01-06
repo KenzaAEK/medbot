@@ -1,0 +1,1261 @@
+@prefix inst: <http://medbot.org/instances#> .
+@prefix med: <http://medbot.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+inst:Dept_Emergency a med:Department ;
+    med:departmentName "Emergency" ;
+    med:floor "Ground Floor" ;
+    med:location "Building A" .
+
+inst:Disease_acne a med:Disease ;
+    med:diseaseName "acne" ;
+    med:hasSymptom inst:Sym_blackheads,
+        inst:Sym_pus_filled_pimples,
+        inst:Sym_scurring,
+        inst:Sym_skin_rash ;
+    med:treatedBy inst:Spec_Dermatology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_aids a med:Disease ;
+    med:diseaseName "aids" ;
+    med:hasSymptom inst:Sym_extra_marital_contacts,
+        inst:Sym_high_fever,
+        inst:Sym_muscle_wasting,
+        inst:Sym_patches_in_throat ;
+    med:treatedBy inst:Spec_Infectious_Disease ;
+    med:urgencyLevel "high" .
+
+inst:Disease_alcoholic_hepatitis a med:Disease ;
+    med:diseaseName "alcoholic hepatitis" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_distention_of_abdomen,
+        inst:Sym_fluid_overload,
+        inst:Sym_history_of_alcohol_consumption,
+        inst:Sym_swelling_of_stomach,
+        inst:Sym_vomiting,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_allergy a med:Disease ;
+    med:diseaseName "allergy" ;
+    med:hasSymptom inst:Sym_chills,
+        inst:Sym_continuous_sneezing,
+        inst:Sym_shivering,
+        inst:Sym_watering_from_eyes ;
+    med:treatedBy inst:Spec_Allergology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_arthritis a med:Disease ;
+    med:diseaseName "arthritis" ;
+    med:hasSymptom inst:Sym_movement_stiffness,
+        inst:Sym_muscle_weakness,
+        inst:Sym_painful_walking,
+        inst:Sym_stiff_neck,
+        inst:Sym_swelling_joints ;
+    med:treatedBy inst:Spec_Rheumatology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_bronchial_asthma a med:Disease ;
+    med:diseaseName "bronchial asthma" ;
+    med:hasSymptom inst:Sym_breathlessness,
+        inst:Sym_cough,
+        inst:Sym_family_history,
+        inst:Sym_fatigue,
+        inst:Sym_high_fever,
+        inst:Sym_mucoid_sputum ;
+    med:treatedBy inst:Spec_Pulmonology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_cervical_spondylosis a med:Disease ;
+    med:diseaseName "cervical spondylosis" ;
+    med:hasSymptom inst:Sym_back_pain,
+        inst:Sym_dizziness,
+        inst:Sym_loss_of_balance,
+        inst:Sym_neck_pain,
+        inst:Sym_weakness_in_limbs ;
+    med:treatedBy inst:Spec_Orthopedics ;
+    med:urgencyLevel "low" .
+
+inst:Disease_chicken_pox a med:Disease ;
+    med:diseaseName "chicken pox" ;
+    med:hasSymptom inst:Sym_fatigue,
+        inst:Sym_headache,
+        inst:Sym_high_fever,
+        inst:Sym_itching,
+        inst:Sym_lethargy,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_malaise,
+        inst:Sym_mild_fever,
+        inst:Sym_red_spots_over_body,
+        inst:Sym_skin_rash,
+        inst:Sym_swelled_lymph_nodes ;
+    med:treatedBy inst:Spec_Infectious_Disease ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_chronic_cholestasis a med:Disease ;
+    med:diseaseName "chronic cholestasis" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_itching,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_nausea,
+        inst:Sym_vomiting,
+        inst:Sym_yellowing_of_eyes,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_common_cold a med:Disease ;
+    med:diseaseName "common cold" ;
+    med:hasSymptom inst:Sym_chest_pain,
+        inst:Sym_chills,
+        inst:Sym_congestion,
+        inst:Sym_continuous_sneezing,
+        inst:Sym_cough,
+        inst:Sym_fatigue,
+        inst:Sym_headache,
+        inst:Sym_high_fever,
+        inst:Sym_loss_of_smell,
+        inst:Sym_malaise,
+        inst:Sym_muscle_pain,
+        inst:Sym_phlegm,
+        inst:Sym_redness_of_eyes,
+        inst:Sym_runny_nose,
+        inst:Sym_sinus_pressure,
+        inst:Sym_swelled_lymph_nodes,
+        inst:Sym_throat_irritation ;
+    med:treatedBy inst:Spec_General_Practice ;
+    med:urgencyLevel "low" .
+
+inst:Disease_dengue a med:Disease ;
+    med:diseaseName "dengue" ;
+    med:hasSymptom inst:Sym_back_pain,
+        inst:Sym_chills,
+        inst:Sym_fatigue,
+        inst:Sym_headache,
+        inst:Sym_high_fever,
+        inst:Sym_joint_pain,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_malaise,
+        inst:Sym_muscle_pain,
+        inst:Sym_nausea,
+        inst:Sym_pain_behind_the_eyes,
+        inst:Sym_red_spots_over_body,
+        inst:Sym_skin_rash,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Infectious_Disease ;
+    med:urgencyLevel "high" .
+
+inst:Disease_diabetes a med:Disease ;
+    med:diseaseName "diabetes" ;
+    med:hasSymptom inst:Sym_blurred_and_distorted_vision,
+        inst:Sym_excessive_hunger,
+        inst:Sym_fatigue,
+        inst:Sym_increased_appetite,
+        inst:Sym_irregular_sugar_level,
+        inst:Sym_lethargy,
+        inst:Sym_obesity,
+        inst:Sym_polyuria,
+        inst:Sym_restlessness,
+        inst:Sym_weight_loss ;
+    med:treatedBy inst:Spec_Endocrinology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_dimorphic_hemmorhoids a med:Disease ;
+    med:diseaseName "dimorphic hemmorhoids" ;
+    med:hasSymptom inst:Sym_bloody_stool,
+        inst:Sym_constipation,
+        inst:Sym_irritation_in_anus,
+        inst:Sym_pain_during_bowel_movements,
+        inst:Sym_pain_in_anal_region ;
+    med:treatedBy inst:Spec_Proctology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_drug_reaction a med:Disease ;
+    med:diseaseName "drug reaction" ;
+    med:hasSymptom inst:Sym_burning_micturition,
+        inst:Sym_itching,
+        inst:Sym_skin_rash,
+        inst:Sym_spotting_urination,
+        inst:Sym_stomach_pain ;
+    med:treatedBy inst:Spec_Allergology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_fungal_infection a med:Disease ;
+    med:diseaseName "fungal infection" ;
+    med:hasSymptom inst:Sym_dischromic_patches,
+        inst:Sym_itching,
+        inst:Sym_nodal_skin_eruptions,
+        inst:Sym_skin_rash ;
+    med:treatedBy inst:Spec_Dermatology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_gastroenteritis a med:Disease ;
+    med:diseaseName "gastroenteritis" ;
+    med:hasSymptom inst:Sym_dehydration,
+        inst:Sym_diarrhoea,
+        inst:Sym_sunken_eyes,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Gastroenterology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_gerd a med:Disease ;
+    med:diseaseName "gerd" ;
+    med:hasSymptom inst:Sym_acidity,
+        inst:Sym_chest_pain,
+        inst:Sym_cough,
+        inst:Sym_stomach_pain,
+        inst:Sym_ulcers_on_tongue,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Gastroenterology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_heart_attack a med:Disease ;
+    med:diseaseName "heart attack" ;
+    med:hasSymptom inst:Sym_breathlessness,
+        inst:Sym_chest_pain,
+        inst:Sym_sweating,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Cardiology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hepatitis_a a med:Disease ;
+    med:diseaseName "hepatitis a" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_dark_urine,
+        inst:Sym_diarrhoea,
+        inst:Sym_joint_pain,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_mild_fever,
+        inst:Sym_muscle_pain,
+        inst:Sym_nausea,
+        inst:Sym_vomiting,
+        inst:Sym_yellowing_of_eyes,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hepatitis_b a med:Disease ;
+    med:diseaseName "hepatitis b" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_dark_urine,
+        inst:Sym_fatigue,
+        inst:Sym_itching,
+        inst:Sym_lethargy,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_malaise,
+        inst:Sym_receiving_blood_transfusion,
+        inst:Sym_receiving_unsterile_injections,
+        inst:Sym_yellow_urine,
+        inst:Sym_yellowing_of_eyes,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hepatitis_c a med:Disease ;
+    med:diseaseName "hepatitis c" ;
+    med:hasSymptom inst:Sym_family_history,
+        inst:Sym_fatigue,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_nausea,
+        inst:Sym_yellowing_of_eyes,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hepatitis_d a med:Disease ;
+    med:diseaseName "hepatitis d" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_dark_urine,
+        inst:Sym_fatigue,
+        inst:Sym_joint_pain,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_nausea,
+        inst:Sym_vomiting,
+        inst:Sym_yellowing_of_eyes,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hepatitis_e a med:Disease ;
+    med:diseaseName "hepatitis e" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_acute_liver_failure,
+        inst:Sym_coma,
+        inst:Sym_dark_urine,
+        inst:Sym_fatigue,
+        inst:Sym_high_fever,
+        inst:Sym_joint_pain,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_nausea,
+        inst:Sym_stomach_bleeding,
+        inst:Sym_vomiting,
+        inst:Sym_yellowing_of_eyes,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hypertension a med:Disease ;
+    med:diseaseName "hypertension" ;
+    med:hasSymptom inst:Sym_chest_pain,
+        inst:Sym_dizziness,
+        inst:Sym_headache,
+        inst:Sym_lack_of_concentration,
+        inst:Sym_loss_of_balance ;
+    med:treatedBy inst:Spec_Cardiology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_hyperthyroidism a med:Disease ;
+    med:diseaseName "hyperthyroidism" ;
+    med:hasSymptom inst:Sym_abnormal_menstruation,
+        inst:Sym_diarrhoea,
+        inst:Sym_excessive_hunger,
+        inst:Sym_fast_heart_rate,
+        inst:Sym_fatigue,
+        inst:Sym_irritability,
+        inst:Sym_mood_swings,
+        inst:Sym_muscle_weakness,
+        inst:Sym_restlessness,
+        inst:Sym_sweating,
+        inst:Sym_weight_loss ;
+    med:treatedBy inst:Spec_Endocrinology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_hypoglycemia a med:Disease ;
+    med:diseaseName "hypoglycemia" ;
+    med:hasSymptom inst:Sym_anxiety,
+        inst:Sym_blurred_and_distorted_vision,
+        inst:Sym_drying_and_tingling_lips,
+        inst:Sym_excessive_hunger,
+        inst:Sym_fatigue,
+        inst:Sym_headache,
+        inst:Sym_irritability,
+        inst:Sym_nausea,
+        inst:Sym_palpitations,
+        inst:Sym_slurred_speech,
+        inst:Sym_sweating,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Endocrinology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_hypothyroidism a med:Disease ;
+    med:diseaseName "hypothyroidism" ;
+    med:hasSymptom inst:Sym_abnormal_menstruation,
+        inst:Sym_brittle_nails,
+        inst:Sym_cold_hands_and_feets,
+        inst:Sym_depression,
+        inst:Sym_dizziness,
+        inst:Sym_enlarged_thyroid,
+        inst:Sym_fatigue,
+        inst:Sym_irritability,
+        inst:Sym_lethargy,
+        inst:Sym_mood_swings,
+        inst:Sym_puffy_face_and_eyes,
+        inst:Sym_swollen_extremeties,
+        inst:Sym_weight_gain ;
+    med:treatedBy inst:Spec_Endocrinology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_impetigo a med:Disease ;
+    med:diseaseName "impetigo" ;
+    med:hasSymptom inst:Sym_blister,
+        inst:Sym_high_fever,
+        inst:Sym_red_sore_around_nose,
+        inst:Sym_skin_rash,
+        inst:Sym_yellow_crust_ooze ;
+    med:treatedBy inst:Spec_Dermatology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_jaundice a med:Disease ;
+    med:diseaseName "jaundice" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_dark_urine,
+        inst:Sym_fatigue,
+        inst:Sym_high_fever,
+        inst:Sym_itching,
+        inst:Sym_vomiting,
+        inst:Sym_weight_loss,
+        inst:Sym_yellowish_skin ;
+    med:treatedBy inst:Spec_Hepatology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_malaria a med:Disease ;
+    med:diseaseName "malaria" ;
+    med:hasSymptom inst:Sym_chills,
+        inst:Sym_diarrhoea,
+        inst:Sym_headache,
+        inst:Sym_high_fever,
+        inst:Sym_muscle_pain,
+        inst:Sym_nausea,
+        inst:Sym_sweating,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Infectious_Disease ;
+    med:urgencyLevel "high" .
+
+inst:Disease_migraine a med:Disease ;
+    med:diseaseName "migraine" ;
+    med:hasSymptom inst:Sym_acidity,
+        inst:Sym_blurred_and_distorted_vision,
+        inst:Sym_depression,
+        inst:Sym_excessive_hunger,
+        inst:Sym_headache,
+        inst:Sym_indigestion,
+        inst:Sym_irritability,
+        inst:Sym_stiff_neck,
+        inst:Sym_visual_disturbances ;
+    med:treatedBy inst:Spec_Neurology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_osteoarthristis a med:Disease ;
+    med:diseaseName "osteoarthristis" ;
+    med:hasSymptom inst:Sym_hip_joint_pain,
+        inst:Sym_joint_pain,
+        inst:Sym_knee_pain,
+        inst:Sym_neck_pain,
+        inst:Sym_painful_walking,
+        inst:Sym_swelling_joints ;
+    med:treatedBy inst:Spec_Rheumatology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_paralysis_brain_hemorrhage a med:Disease ;
+    med:diseaseName "paralysis (brain hemorrhage)" ;
+    med:hasSymptom inst:Sym_altered_sensorium,
+        inst:Sym_headache,
+        inst:Sym_vomiting,
+        inst:Sym_weakness_of_one_body_side ;
+    med:treatedBy inst:Spec_Neurology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_paroxysmal_positional_vertigo a med:Disease ;
+    med:diseaseName "paroxysmal positional vertigo" ;
+    med:hasSymptom inst:Sym_headache,
+        inst:Sym_loss_of_balance,
+        inst:Sym_nausea,
+        inst:Sym_spinning_movements,
+        inst:Sym_unsteadiness,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_ENT ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_peptic_ulcer_disease a med:Disease ;
+    med:diseaseName "peptic ulcer disease" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_indigestion,
+        inst:Sym_internal_itching,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_passage_of_gases,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Gastroenterology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_pneumonia a med:Disease ;
+    med:diseaseName "pneumonia" ;
+    med:hasSymptom inst:Sym_breathlessness,
+        inst:Sym_chest_pain,
+        inst:Sym_chills,
+        inst:Sym_cough,
+        inst:Sym_fast_heart_rate,
+        inst:Sym_fatigue,
+        inst:Sym_high_fever,
+        inst:Sym_malaise,
+        inst:Sym_phlegm,
+        inst:Sym_rusty_sputum,
+        inst:Sym_sweating ;
+    med:treatedBy inst:Spec_Pulmonology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_psoriasis a med:Disease ;
+    med:diseaseName "psoriasis" ;
+    med:hasSymptom inst:Sym_inflammatory_nails,
+        inst:Sym_joint_pain,
+        inst:Sym_silver_like_dusting,
+        inst:Sym_skin_peeling,
+        inst:Sym_skin_rash,
+        inst:Sym_small_dents_in_nails ;
+    med:treatedBy inst:Spec_Dermatology ;
+    med:urgencyLevel "low" .
+
+inst:Disease_tuberculosis a med:Disease ;
+    med:diseaseName "tuberculosis" ;
+    med:hasSymptom inst:Sym_blood_in_sputum,
+        inst:Sym_breathlessness,
+        inst:Sym_chest_pain,
+        inst:Sym_chills,
+        inst:Sym_cough,
+        inst:Sym_fatigue,
+        inst:Sym_high_fever,
+        inst:Sym_loss_of_appetite,
+        inst:Sym_malaise,
+        inst:Sym_mild_fever,
+        inst:Sym_phlegm,
+        inst:Sym_sweating,
+        inst:Sym_swelled_lymph_nodes,
+        inst:Sym_vomiting,
+        inst:Sym_weight_loss,
+        inst:Sym_yellowing_of_eyes ;
+    med:treatedBy inst:Spec_Pulmonology ;
+    med:urgencyLevel "high" .
+
+inst:Disease_typhoid a med:Disease ;
+    med:diseaseName "typhoid" ;
+    med:hasSymptom inst:Sym_abdominal_pain,
+        inst:Sym_belly_pain,
+        inst:Sym_chills,
+        inst:Sym_constipation,
+        inst:Sym_diarrhoea,
+        inst:Sym_fatigue,
+        inst:Sym_headache,
+        inst:Sym_high_fever,
+        inst:Sym_nausea,
+        inst:Sym_toxic_look_typhos,
+        inst:Sym_vomiting ;
+    med:treatedBy inst:Spec_Infectious_Disease ;
+    med:urgencyLevel "high" .
+
+inst:Disease_urinary_tract_infection a med:Disease ;
+    med:diseaseName "urinary tract infection" ;
+    med:hasSymptom inst:Sym_bladder_discomfort,
+        inst:Sym_burning_micturition,
+        inst:Sym_continuous_feel_of_urine,
+        inst:Sym_foul_smell_of_urine ;
+    med:treatedBy inst:Spec_Urology ;
+    med:urgencyLevel "medium" .
+
+inst:Disease_varicose_veins a med:Disease ;
+    med:diseaseName "varicose veins" ;
+    med:hasSymptom inst:Sym_bruising,
+        inst:Sym_cramps,
+        inst:Sym_fatigue,
+        inst:Sym_obesity,
+        inst:Sym_prominent_veins_on_calf,
+        inst:Sym_swollen_blood_vessels,
+        inst:Sym_swollen_legs ;
+    med:treatedBy inst:Spec_Vascular_Surgery ;
+    med:urgencyLevel "low" .
+
+<http://medbot.org/ontology> a owl:Ontology .
+
+med:availableSlots a owl:DatatypeProperty ;
+    rdfs:range xsd:integer .
+
+med:belongsToDepartment a owl:ObjectProperty ;
+    rdfs:domain med:MedicalSpecialty ;
+    rdfs:range med:Department .
+
+med:departmentName a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+med:diseaseName a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+med:floor a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+med:hasSymptom a owl:ObjectProperty ;
+    rdfs:domain med:Disease ;
+    rdfs:range med:Symptom .
+
+med:location a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+med:severityLevel a owl:DatatypeProperty ;
+    rdfs:range xsd:integer .
+
+med:symptomName a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+med:treatedBy a owl:ObjectProperty ;
+    rdfs:domain med:Disease ;
+    rdfs:range med:MedicalSpecialty .
+
+med:urgencyLevel a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+inst:Dept_Cardiology a med:Department ;
+    med:availableSlots 12 ;
+    med:departmentName "Cardiology" ;
+    med:floor "2nd Floor" ;
+    med:location "Building B" .
+
+inst:Dept_Dermatology a med:Department ;
+    med:availableSlots 15 ;
+    med:departmentName "Dermatology" ;
+    med:floor "1st Floor" ;
+    med:location "Building C" .
+
+inst:Dept_ENT a med:Department ;
+    med:availableSlots 12 ;
+    med:departmentName "ENT" ;
+    med:floor "1st Floor" ;
+    med:location "Building D" .
+
+inst:Dept_Endocrinology a med:Department ;
+    med:availableSlots 18 ;
+    med:departmentName "Endocrinology" ;
+    med:floor "2nd Floor" ;
+    med:location "Building C" .
+
+inst:Dept_General_Medicine a med:Department ;
+    med:availableSlots 25 ;
+    med:departmentName "General Medicine" ;
+    med:floor "Ground Floor" ;
+    med:location "Building B" .
+
+inst:Dept_Infectious_Disease a med:Department ;
+    med:availableSlots 3 ;
+    med:departmentName "Infectious Disease" ;
+    med:floor "3rd Floor" ;
+    med:location "Building A" .
+
+inst:Dept_Internal_Medicine a med:Department ;
+    med:availableSlots 20 ;
+    med:departmentName "Internal Medicine" ;
+    med:floor "1st Floor" ;
+    med:location "Building B" .
+
+inst:Dept_Neurology a med:Department ;
+    med:availableSlots 20 ;
+    med:departmentName "Neurology" ;
+    med:floor "4th Floor" ;
+    med:location "Building A" .
+
+inst:Dept_Orthopedics a med:Department ;
+    med:availableSlots 15 ;
+    med:departmentName "Orthopedics" ;
+    med:floor "Ground Floor" ;
+    med:location "Building D" .
+
+inst:Dept_Pulmonology a med:Department ;
+    med:availableSlots 16 ;
+    med:departmentName "Pulmonology" ;
+    med:floor "4th Floor" ;
+    med:location "Building B" .
+
+inst:Dept_Rheumatology a med:Department ;
+    med:availableSlots 18 ;
+    med:departmentName "Rheumatology" ;
+    med:floor "3rd Floor" ;
+    med:location "Building C" .
+
+inst:Dept_Urology a med:Department ;
+    med:availableSlots 14 ;
+    med:departmentName "Urology" ;
+    med:floor "2nd Floor" ;
+    med:location "Building D" .
+
+inst:Spec_ENT a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_ENT ;
+    med:specialtyName "ENT" .
+
+inst:Spec_General_Practice a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_General_Medicine ;
+    med:specialtyName "General Practice" .
+
+inst:Spec_Orthopedics a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Orthopedics ;
+    med:specialtyName "Orthopedics" .
+
+inst:Spec_Proctology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Surgery ;
+    med:specialtyName "Proctology" .
+
+inst:Spec_Urology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Urology ;
+    med:specialtyName "Urology" .
+
+inst:Spec_Vascular_Surgery a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Surgery ;
+    med:specialtyName "Vascular Surgery" .
+
+inst:Sym_acute_liver_failure a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "acute liver failure" .
+
+inst:Sym_altered_sensorium a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "altered sensorium" .
+
+inst:Sym_anxiety a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "anxiety" .
+
+inst:Sym_belly_pain a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "belly pain" .
+
+inst:Sym_blackheads a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "blackheads" .
+
+inst:Sym_bladder_discomfort a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "bladder discomfort" .
+
+inst:Sym_blister a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "blister" .
+
+inst:Sym_blood_in_sputum a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "blood in sputum" .
+
+inst:Sym_bloody_stool a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "bloody stool" .
+
+inst:Sym_brittle_nails a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "brittle nails" .
+
+inst:Sym_bruising a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "bruising" .
+
+inst:Sym_cold_hands_and_feets a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "cold hands and feets" .
+
+inst:Sym_coma a med:Symptom ;
+    med:severityLevel 7 ;
+    med:symptomName "coma" .
+
+inst:Sym_congestion a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "congestion" .
+
+inst:Sym_continuous_feel_of_urine a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "continuous feel of urine" .
+
+inst:Sym_cramps a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "cramps" .
+
+inst:Sym_dehydration a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "dehydration" .
+
+inst:Sym_dischromic_patches a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "dischromic patches" .
+
+inst:Sym_distention_of_abdomen a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "distention of abdomen" .
+
+inst:Sym_drying_and_tingling_lips a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "drying and tingling lips" .
+
+inst:Sym_enlarged_thyroid a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "enlarged thyroid" .
+
+inst:Sym_extra_marital_contacts a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "extra marital contacts" .
+
+inst:Sym_fluid_overload a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "fluid overload" .
+
+inst:Sym_foul_smell_of_urine a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "foul smell of urine" .
+
+inst:Sym_hip_joint_pain a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "hip joint pain" .
+
+inst:Sym_history_of_alcohol_consumption a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "history of alcohol consumption" .
+
+inst:Sym_increased_appetite a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "increased appetite" .
+
+inst:Sym_inflammatory_nails a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "inflammatory nails" .
+
+inst:Sym_internal_itching a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "internal itching" .
+
+inst:Sym_irregular_sugar_level a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "irregular sugar level" .
+
+inst:Sym_irritation_in_anus a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "irritation in anus" .
+
+inst:Sym_knee_pain a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "knee pain" .
+
+inst:Sym_lack_of_concentration a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "lack of concentration" .
+
+inst:Sym_loss_of_smell a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "loss of smell" .
+
+inst:Sym_movement_stiffness a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "movement stiffness" .
+
+inst:Sym_mucoid_sputum a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "mucoid sputum" .
+
+inst:Sym_muscle_wasting a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "muscle wasting" .
+
+inst:Sym_nodal_skin_eruptions a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "nodal skin eruptions" .
+
+inst:Sym_pain_behind_the_eyes a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "pain behind the eyes" .
+
+inst:Sym_pain_during_bowel_movements a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "pain during bowel movements" .
+
+inst:Sym_pain_in_anal_region a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "pain in anal region" .
+
+inst:Sym_palpitations a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "palpitations" .
+
+inst:Sym_passage_of_gases a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "passage of gases" .
+
+inst:Sym_patches_in_throat a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "patches in throat" .
+
+inst:Sym_polyuria a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "polyuria" .
+
+inst:Sym_prominent_veins_on_calf a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "prominent veins on calf" .
+
+inst:Sym_puffy_face_and_eyes a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "puffy face and eyes" .
+
+inst:Sym_pus_filled_pimples a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "pus filled pimples" .
+
+inst:Sym_receiving_blood_transfusion a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "receiving blood transfusion" .
+
+inst:Sym_receiving_unsterile_injections a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "receiving unsterile injections" .
+
+inst:Sym_red_sore_around_nose a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "red sore around nose" .
+
+inst:Sym_redness_of_eyes a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "redness of eyes" .
+
+inst:Sym_runny_nose a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "runny nose" .
+
+inst:Sym_rusty_sputum a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "rusty sputum" .
+
+inst:Sym_scurring a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "scurring" .
+
+inst:Sym_shivering a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "shivering" .
+
+inst:Sym_silver_like_dusting a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "silver like dusting" .
+
+inst:Sym_sinus_pressure a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "sinus pressure" .
+
+inst:Sym_skin_peeling a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "skin peeling" .
+
+inst:Sym_slurred_speech a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "slurred speech" .
+
+inst:Sym_small_dents_in_nails a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "small dents in nails" .
+
+inst:Sym_spinning_movements a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "spinning movements" .
+
+inst:Sym_spotting_urination a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "spotting urination" .
+
+inst:Sym_stomach_bleeding a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "stomach bleeding" .
+
+inst:Sym_sunken_eyes a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "sunken eyes" .
+
+inst:Sym_swelling_of_stomach a med:Symptom ;
+    med:severityLevel 7 ;
+    med:symptomName "swelling of stomach" .
+
+inst:Sym_swollen_blood_vessels a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "swollen blood vessels" .
+
+inst:Sym_swollen_extremeties a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "swollen extremeties" .
+
+inst:Sym_swollen_legs a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "swollen legs" .
+
+inst:Sym_throat_irritation a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "throat irritation" .
+
+inst:Sym_toxic_look_typhos a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "toxic look (typhos)" .
+
+inst:Sym_ulcers_on_tongue a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "ulcers on tongue" .
+
+inst:Sym_unsteadiness a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "unsteadiness" .
+
+inst:Sym_visual_disturbances a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "visual disturbances" .
+
+inst:Sym_watering_from_eyes a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "watering from eyes" .
+
+inst:Sym_weakness_in_limbs a med:Symptom ;
+    med:severityLevel 7 ;
+    med:symptomName "weakness in limbs" .
+
+inst:Sym_weakness_of_one_body_side a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "weakness of one body side" .
+
+inst:Sym_weight_gain a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "weight gain" .
+
+inst:Sym_yellow_crust_ooze a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "yellow crust ooze" .
+
+inst:Sym_yellow_urine a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "yellow urine" .
+
+inst:Dept_Gastroenterology a med:Department ;
+    med:availableSlots 8,
+        12 ;
+    med:departmentName "Gastroenterology" ;
+    med:floor "3rd Floor" ;
+    med:location "Building B" .
+
+inst:Dept_Surgery a med:Department ;
+    med:availableSlots 10,
+        12 ;
+    med:departmentName "Surgery" ;
+    med:floor "5th Floor" ;
+    med:location "Building A" .
+
+inst:Spec_Allergology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Internal_Medicine ;
+    med:specialtyName "Allergology" .
+
+inst:Spec_Cardiology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Cardiology ;
+    med:specialtyName "Cardiology" .
+
+inst:Spec_Neurology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Neurology ;
+    med:specialtyName "Neurology" .
+
+inst:Spec_Rheumatology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Rheumatology ;
+    med:specialtyName "Rheumatology" .
+
+inst:Sym_abnormal_menstruation a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "abnormal menstruation" .
+
+inst:Sym_acidity a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "acidity" .
+
+inst:Sym_back_pain a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "back pain" .
+
+inst:Sym_burning_micturition a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "burning micturition" .
+
+inst:Sym_constipation a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "constipation" .
+
+inst:Sym_continuous_sneezing a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "continuous sneezing" .
+
+inst:Sym_depression a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "depression" .
+
+inst:Sym_family_history a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "family history" .
+
+inst:Sym_fast_heart_rate a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "fast heart rate" .
+
+inst:Sym_indigestion a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "indigestion" .
+
+inst:Sym_mood_swings a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "mood swings" .
+
+inst:Sym_muscle_weakness a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "muscle weakness" .
+
+inst:Sym_neck_pain a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "neck pain" .
+
+inst:Sym_obesity a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "obesity" .
+
+inst:Sym_painful_walking a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "painful walking" .
+
+inst:Sym_red_spots_over_body a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "red spots over body" .
+
+inst:Sym_restlessness a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "restlessness" .
+
+inst:Sym_stiff_neck a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "stiff neck" .
+
+inst:Sym_stomach_pain a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "stomach pain" .
+
+inst:Sym_swelling_joints a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "swelling joints" .
+
+inst:Spec_Gastroenterology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Gastroenterology ;
+    med:specialtyName "Gastroenterology" .
+
+inst:Spec_Pulmonology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Pulmonology ;
+    med:specialtyName "Pulmonology" .
+
+inst:Sym_blurred_and_distorted_vision a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "blurred and distorted vision" .
+
+inst:Sym_dizziness a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "dizziness" .
+
+inst:Sym_loss_of_balance a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "loss of balance" .
+
+inst:Sym_mild_fever a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "mild fever" .
+
+inst:Sym_phlegm a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "phlegm" .
+
+inst:Sym_swelled_lymph_nodes a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "swelled lymph nodes" .
+
+inst:Spec_Dermatology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Dermatology ;
+    med:specialtyName "Dermatology" .
+
+inst:Spec_Endocrinology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Endocrinology ;
+    med:specialtyName "Endocrinology" .
+
+inst:Sym_breathlessness a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "breathlessness" .
+
+inst:Sym_excessive_hunger a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "excessive hunger" .
+
+inst:Sym_irritability a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "irritability" .
+
+inst:Sym_lethargy a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "lethargy" .
+
+inst:Sym_muscle_pain a med:Symptom ;
+    med:severityLevel 2 ;
+    med:symptomName "muscle pain" .
+
+inst:Sym_weight_loss a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "weight loss" .
+
+inst:Spec_Infectious_Disease a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Infectious_Disease ;
+    med:specialtyName "Infectious Disease" .
+
+inst:Sym_cough a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "cough" .
+
+inst:Sym_dark_urine a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "dark urine" .
+
+inst:Sym_diarrhoea a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "diarrhoea" .
+
+inst:Sym_chest_pain a med:Symptom ;
+    med:severityLevel 7 ;
+    med:symptomName "chest pain" .
+
+inst:Sym_itching a med:Symptom ;
+    med:severityLevel 1 ;
+    med:symptomName "itching" .
+
+inst:Sym_joint_pain a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "joint pain" .
+
+inst:Sym_malaise a med:Symptom ;
+    med:severityLevel 6 ;
+    med:symptomName "malaise" .
+
+inst:Sym_sweating a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "sweating" .
+
+inst:Sym_chills a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "chills" .
+
+inst:Sym_skin_rash a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "skin rash" .
+
+inst:Sym_yellowing_of_eyes a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "yellowing of eyes" .
+
+inst:Spec_Hepatology a med:MedicalSpecialty ;
+    med:belongsToDepartment inst:Dept_Gastroenterology ;
+    med:specialtyName "Hepatology" .
+
+inst:Sym_yellowish_skin a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "yellowish skin" .
+
+inst:Sym_abdominal_pain a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "abdominal pain" .
+
+inst:Sym_headache a med:Symptom ;
+    med:severityLevel 3 ;
+    med:symptomName "headache" .
+
+inst:Sym_loss_of_appetite a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "loss of appetite" .
+
+inst:Sym_nausea a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "nausea" .
+
+inst:Sym_high_fever a med:Symptom ;
+    med:severityLevel 7 ;
+    med:symptomName "high fever" .
+
+med:Department a owl:Class ;
+    rdfs:label "Département Hospitalier"@fr .
+
+inst:Sym_fatigue a med:Symptom ;
+    med:severityLevel 4 ;
+    med:symptomName "fatigue" .
+
+inst:Sym_vomiting a med:Symptom ;
+    med:severityLevel 5 ;
+    med:symptomName "vomiting" .
+
+med:MedicalSpecialty a owl:Class ;
+    rdfs:label "Spécialité Médicale"@fr .
+
+med:Disease a owl:Class ;
+    rdfs:label "Maladie"@fr .
+
+med:Symptom a owl:Class ;
+    rdfs:label "Symptôme"@fr .
+
