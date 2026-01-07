@@ -165,8 +165,7 @@ class TestUtilityFunctions:
         specialties = kg.get_all_specialties()
         
         assert isinstance(specialties, list)
-        # Allow for 0 or more specialties since our ontology might not have MedicalSpecialty instances
-        # assert len(specialties) > 0, "Should have at least one specialty"
+        assert len(specialties) > 0, "Should have at least one specialty"
     
     def test_get_all_departments(self, kg):
         """Test listing all departments"""

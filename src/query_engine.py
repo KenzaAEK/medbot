@@ -360,7 +360,7 @@ class MedicalKnowledgeGraph:
         query = """
         SELECT DISTINCT ?specialtyName
         WHERE {
-            ?specialty rdf:type med:Specialty .
+            ?specialty rdf:type med:MedicalSpecialty .
             ?specialty med:specialtyName ?specialtyName .
         }
         ORDER BY ?specialtyName
