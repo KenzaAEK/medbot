@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  # Service 1 : LLM Engine
+  # Service 1 : LLM Engine (Ollama)
   ollama:
     image: ollama/ollama:latest
-    container_name: startguide_ollama
+    container_name: medbot_ollama
     restart: always
     volumes:
       - ollama_storage:/root/.ollama  # Volume dédié aux modèles (Mistral)
@@ -13,30 +13,32 @@ services:
     networks:
       - rag_network
 
-  # Service 2 : RAG Backend
-  app_rag:
+  # Service 2 : MedBot Streamlit App
+  medbot_app:
     build: .
-    container_name: startguide_backend
+    container_name: medbot_streamlit
     depends_on:
       - ollama
     volumes:
-      - ./data:/app/data             # Montage des PDF (Lecture seule recommandée en prod)
-      - chroma_storage:/app/chroma_db # Volume dédié à la base vectorielle persistante
-      # On garde le montage du code pour le dev (à retirer en prod)
-      - ./app:/app/app
+      - ./data:/app/data             # Medical data and ontology
+      - ./src:/app/src               # Source code
+      - ./app:/app/app               # Streamlit app
+      - ./tests:/app/tests           # Tests folder
     environment:
       - OLLAMA_BASE_URL=http://ollama:11434
-      - CHROMA_DB_DIR=/app/chroma_db
+      - MODEL_NAME=mistral
+      - ONTOLOGY_PATH=/app/data/ontology/medical_ontology.ttl
+      - DATA_PATH=/app/data/processed/consolidated_medical_data.json
+      - DEFAULT_LANGUAGE=fr
     ports:
-      - "8000:8000"
-    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+      - "8501:8501"
+    command: ["streamlit", "run", "app/main.py", "--server.port=8501", "--server.address=0.0.0.0"]
     networks:
       - rag_network
 
 # Définition des volumes persistants
 volumes:
   ollama_storage:
-  chroma_storage:
 
 # Réseau isolé
 networks:

@@ -8,8 +8,14 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copie le reste du code
-COPY app /app/app
+# Télécharge les modèles spaCy pour NLP (français et anglais)
+RUN python -m spacy download fr_core_news_sm
+RUN python -m spacy download en_core_web_sm
 
-# Définit le point d'entrée pour l'application
-CMD ["python", "app/main.py"]
+# Copie le reste du code
+COPY src /app/src
+COPY app /app/app
+COPY data /app/data
+
+# Définit le point d'entrée pour l'application Streamlit
+CMD ["streamlit", "run", "app/main.py", "--server.port=8501", "--server.address=0.0.0.0"]

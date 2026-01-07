@@ -13,7 +13,7 @@ seaborn
 # --- RAG & LLM (LangChain) ---
 langchain
 langchain-community
-langchain-chroma        # connecteur spécifique Chroma (récent)
+langchain-ollama        # Ollama integration for LangChain (REQUIRED)
 chromadb                # Base vectorielle
 
 # --- Chargement de Documents (Ton ancien code) ---
@@ -28,4 +28,9 @@ python-multipart        # Requis pour l'upload de fichiers
 # --- Interface ---
 streamlit
 watchdog                # Pour le reload auto
+
+# --- Testing & Development ---
+pytest                  # Testing framework
+pytest-cov              # Coverage reporting
+python-dotenv           # Environment variable management
 
