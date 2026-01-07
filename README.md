@@ -18,11 +18,12 @@ Réduire l'engorgement des urgences hospitalières en fournissant une orientatio
 ## ✨ Fonctionnalités
 
 - 💬 **Chatbot Conversationnel** : Interface naturelle en français et anglais
-- 🧠 **Extraction NLP** : Détection automatique de 133 symptômes médicaux
-- 🔍 **Graphe de Connaissances** : 2500+ triplets RDF (41 maladies, 15 spécialités)
+- 🧠 **Extraction NLP** : Détection automatique de 131 symptômes médicaux
+- 🔍 **Graphe de Connaissances** : 1,036 triplets RDF (41 maladies, 16 spécialités, 15 départements)
 - 🏥 **Recommandations Intelligentes** : Spécialité, département, niveau d'urgence
 - 🤖 **Réponses Empathiques** : Générées par LLM (Mistral 7B via Ollama)
 - 📊 **Statistiques en Temps Réel** : Dashboard du système médical
+- ✅ **Tests Complets** : 35 tests unitaires et d'intégration (100% passing)
 
 ---
 
@@ -33,19 +34,19 @@ Le projet est structuré en 3 couches :
 ### 1. **Data Engineering Layer** ✅
 - Nettoyage et normalisation de 6 datasets CSV
 - Génération de `consolidated_medical_data.json`
-- Enrichissement avec niveaux d'urgence et créneaux
+- Enrichissement avec niveaux d'urgence et métadonnées
 
 ### 2. **Semantic Layer** ✅
-- Ontologie médicale OWL/RDF
-- Graphe de connaissances (Turtle format)
-- Classes: Disease, Symptom, Specialty, Department
-- Propriétés: hasSymptom, treatedBy, belongsToDepartment
+- Ontologie médicale OWL/RDF (1,036 triplets)
+- Graphe de connaissances (format Turtle)
+- Classes: Disease, Symptom, MedicalSpecialty, Department
+- Propriétés: hasSymptom, treatedBy, belongsToDepartment, urgencyLevel
 
 ### 3. **Application Layer** ✅
-- **NLP Processor** (`nlp_processor.py`) : Extraction de symptômes avec spaCy
-- **Query Engine** (`query_engine.py`) : Requêtes SPARQL sur le graphe
-- **LLM Engine** (`llm_engine.py`) : RAG avec Ollama/Mistral
-- **Streamlit UI** (`app/main.py`) : Interface web interactive
+- **NLP Processor** (`nlp_processor.py`) : Extraction de symptômes avec spaCy (FR/EN)
+- **Query Engine** (`query_engine.py`) : Requêtes SPARQL avec ranking intelligent
+- **LLM Engine** (`llm_engine.py`) : RAG avec Ollama/Mistral et historique conversation
+- **Streamlit UI** (`app/main.py`) : Interface web interactive avec cartes de maladies
 
 ---
 
@@ -167,10 +168,10 @@ medbot/
 | Entité | Nombre |
 |--------|--------|
 | Maladies | 41 |
-| Symptômes | 133 |
-| Spécialités Médicales | 15 |
-| Départements | 12 |
-| Triplets RDF | 2500+ |
+| Symptômes | 131 |
+| Spécialités Médicales | 16 |
+| Départements | 15 |
+| Triplets RDF | 1,036 |
 
 ### Exemples de Maladies Couvertes
 
@@ -254,33 +255,39 @@ DATA_PATH=data/processed/consolidated_medical_data.json
 
 ---
 
-## 📝 Roadmap
+## 🧪 Tests & Validation
 
-### ✅ Phase 1 : Data & Semantic Layer (Complété)
-- [x] Pipeline de traitement des données
-- [x] Création de l'ontologie RDF
-- [x] Génération du graphe de connaissances
+Le projet inclut une suite complète de tests pour garantir la fiabilité :
 
-### ✅ Phase 2 : Application Layer (Complété)
-- [x] Module NLP (extraction de symptômes)
-- [x] Moteur SPARQL (requêtes sur le graphe)
-- [x] Intégration LLM (RAG avec Ollama)
-- [x] Interface Streamlit
+### Tests Unitaires & Intégration
 
-### 🔄 Phase 3 : Testing & Validation (En cours)
-- [ ] Tests unitaires complets
-- [ ] Tests d'intégration
-- [ ] Validation de l'ontologie (notebook)
-- [ ] Benchmarks de performance
+```bash
+# Exécuter tous les tests
+docker exec medbot_streamlit pytest tests/ -v
 
-### 📋 Phase 4 : Améliorations Futures
-- [ ] Support multilingue complet (Arabe)
-- [ ] Authentification utilisateur
-- [ ] Historique des consultations
-- [ ] Système de feedback utilisateur
-- [ ] API REST (FastAPI)
-- [ ] Base de données relationnelle (PostgreSQL)
-- [ ] Intégration télémédecine
+# Avec couverture de code
+docker exec medbot_streamlit pytest tests/ --cov=src --cov-report=html
+```
+
+**Résultats** : ✅ **35/35 tests passing (100%)**
+
+- `test_nlp_processor.py` : 15 tests (extraction, normalisation, détection langue)
+- `test_query_engine.py` : 10 tests (SPARQL, ranking, détails maladies)
+- `test_integration.py` : 10 tests (flux end-to-end, cas réels)
+
+### Script de Validation
+
+Vérifier l'intégrité du système complet :
+
+```bash
+docker exec medbot_streamlit python /app/tests/validate_data.py
+```
+
+Ce script valide :
+- ✅ Chargement du graphe RDF (1,036 triplets)
+- ✅ Requêtes SPARQL fonctionnelles
+- ✅ Extraction NLP opérationnelle
+- ✅ Intégrité des données (aucune maladie orpheline)
 
 ---
 
@@ -294,21 +301,7 @@ DATA_PATH=data/processed/consolidated_medical_data.json
 
 ---
 
-## 🤝 Contribution
 
-Les contributions sont les bienvenues ! Voir [CONTRIBUTING.md](docs/CONTRIBUTING.md) (à venir)
-
----
-
-## 📄 License
-
-MIT License - Voir [LICENSE](LICENSE)
-
----
-
-## 👨‍💻 Auteurs
-
-- **MedBot Team** - Projet d'ontologie médicale avec IA
 
 ---
 
@@ -331,4 +324,4 @@ Pour toute question ou problème :
 
 **Date** : Janvier 2026  
 **Version** : 1.0.0-MVP  
-**Status** : ✅ Application Layer Complete - Ready for Testing
+**Status** : ✅ Production Ready - 35 Tests Passing (100%) - Fully Validated

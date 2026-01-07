@@ -1,197 +1,84 @@
-# MedBot Startup Guide
+# 🚀 MedBot Startup Guide
 
-## Prerequisites
+This guide describes how to run the MedBot application using Docker.
 
-1. **Docker & Docker Compose** installed
-2. **Or** Python 3.11+ with pip
+## 📋 Prerequisites
+
+- **Docker Desktop** installed and running
+- **Git** (to clone the repository)
+
+## 🐳 Quick Start with Docker
+
+The application is containerized and ready to run. Environment variables are pre-configured in `docker-compose.yml`.
+
+### 1. Start Services
+
+Open a terminal in the project directory and run:
+
+```powershell
+docker-compose up -d
+```
+
+This starts:
+- **Ollama Service** (LLM Backend) on port 11434
+- **MedBot App** (Streamlit UI) on port 8501
+
+### 2. Download LLM Model
+
+**⚠️ Only required on first launch!**
+
+The Ollama container needs the Mistral model to generate responses.
+
+```powershell
+docker exec medbot_ollama ollama pull mistral
+```
+
+*Note: This download is ~4.1GB and may take a few minutes depending on your internet connection.*
+
+### 3. Access the Application
+
+Open your browser and navigate to:
+👉 **[http://localhost:8501](http://localhost:8501)**
 
 ---
 
-## Option 1: Docker (Recommended)
+## 🧪 Running Tests
 
-### Step 1: Start Services
+MedBot comes with a comprehensive test suite (35 tests) to verify system integrity. You can run these directly inside the Docker container.
 
-```powershell
-# Build and start all services (Ollama + MedBot)
-docker-compose up --build
-```
-
-This will:
-- Start Ollama container on port 11434
-- Build and start MedBot Streamlit app on port 8501
-
-### Step 2: Download Mistral Model
-
-In a new terminal:
+### Run All Unit Tests
+Executes the full test suite (NLP, SPARQL, Integration).
 
 ```powershell
-# Enter Ollama container
-docker exec -it medbot_ollama bash
-
-# Download Mistral model (inside container)
-ollama pull mistral
-
-# Exit container
-exit
+docker exec medbot_streamlit pytest tests/ -v
 ```
 
-### Step 3: Access MedBot
-
-Open your browser: **http://localhost:8501**
-
----
-
-## Option 2: Local Development (Without Docker)
-
-### Step 1: Install Ollama
-
-Download and install from: https://ollama.ai
+### Run Validation Check
+Verifies the Knowledge Graph structure and data integrity.
 
 ```powershell
-# Start Ollama (in separate terminal)
-ollama serve
-
-# Download Mistral model (in another terminal)
-ollama pull mistral
-```
-
-### Step 2: Install Python Dependencies
-
-```powershell
-# Create virtual environment (optional but recommended)
-python -m venv venv
-.\venv\Scripts\activate
-
-# Install requirements
-pip install -r requirements.txt
-
-# Download spaCy models
-python -m spacy download fr_core_news_sm
-python -m spacy download en_core_web_sm
-```
-
-### Step 3: Set Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-OLLAMA_BASE_URL=http://localhost:11434
-MODEL_NAME=mistral
-DEFAULT_LANGUAGE=fr
-ONTOLOGY_PATH=data/ontology/medical_ontology.ttl
-DATA_PATH=data/processed/consolidated_medical_data.json
-```
-
-### Step 4: Run Streamlit App
-
-```powershell
-streamlit run app/main.py
-```
-
-Access at: **http://localhost:8501**
-
----
-
-## Testing Individual Components
-
-### Test NLP Processor
-
-```powershell
-python src/nlp_processor.py
-```
-
-### Test Query Engine
-
-```powershell
-python src/query_engine.py
-```
-
-### Test LLM Engine
-
-```powershell
-python src/llm_engine.py
+docker exec medbot_streamlit python /app/tests/validate_data.py
 ```
 
 ---
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
-### Issue: "Ollama connection failed"
+**Issue**: "Ollama connection failed" in the app.
+**Fix**: Ensure the model is pulled (`step 2`) and the container is running (`docker ps`).
 
-**Solution:**
-- Make sure Ollama is running: `docker ps` or check Ollama service
-- Verify URL in `.env`: `OLLAMA_BASE_URL=http://localhost:11434`
-- For Docker: use `http://ollama:11434` (service name)
+**Issue**: "Model not found".
+**Fix**: Run `docker exec medbot_ollama ollama list` to see if `mistral` is present. If not, pull it again.
 
-### Issue: "Model not found"
-
-**Solution:**
-```powershell
-# Pull the model
-ollama pull mistral
-
-# Or use a different model
-ollama pull llama2
-```
-
-Then update MODEL_NAME in `.env`
-
-### Issue: "spaCy model not found"
-
-**Solution:**
-```powershell
-python -m spacy download fr_core_news_sm
-python -m spacy download en_core_web_sm
-```
-
-### Issue: "Ontology file not found"
-
-**Solution:**
-Make sure you've run the data processing:
-
-```powershell
-# Process data
-python src/data_processing.py
-
-# Build knowledge graph
-python src/build_graph.py
-```
+**Issue**: "Docker volume permission errors".
+**Fix**: Restart Docker Desktop.
 
 ---
 
-## Production Deployment
+## 🛑 Stopping the Application
 
-### Docker Compose Production
+To stop all services:
 
-```yaml
-# Use production-ready settings
-environment:
-  - LOG_LEVEL=WARNING
-  - STREAMLIT_SERVER_HEADLESS=true
+```powershell
+docker-compose down
 ```
-
-### Security Considerations
-
-1. Don't expose Ollama port publicly
-2. Add authentication to Streamlit (use streamlit-authenticator)
-3. Use HTTPS in production
-4. Regularly update dependencies
-
----
-
-## Next Steps
-
-1. ✅ Start the application
-2. ✅ Test with sample symptoms
-3. 📝 Complete validation notebook
-4. 🧪 Run unit tests
-5. 📚 Review documentation
-
----
-
-## Support
-
-For issues, check:
-- Application logs in terminal
-- Docker logs: `docker logs medbot_streamlit`
-- Ollama logs: `docker logs medbot_ollama`
