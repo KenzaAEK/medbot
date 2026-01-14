@@ -299,19 +299,6 @@ Ce script valide :
 
 ---
 
-
-
----
-
-## 📞 Support
-
-Pour toute question ou problème :
-- 📧 Email : support@medbot.com (exemple)
-- 📖 Documentation : Voir [docs/](docs/)
-- 🐛 Issues : GitHub Issues
-
----
-
 ## 🙏 Remerciements
 
 - Dataset sources : Kaggle Medical Datasets
