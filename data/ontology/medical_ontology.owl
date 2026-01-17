@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:med="http://medbot.org/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://medbot.org/ontology#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Département Hospitalier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_weakness_of_one_body_side">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>weakness of one body side</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_foul_smell_of_urine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>foul smell of urine</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_common_cold">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>common cold</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_General_Practice"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_smell"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_throat_irritation"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_redness_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_congestion"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chest_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cough"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sinus_pressure"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_malaise"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swelled_lymph_nodes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_continuous_sneezing"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_phlegm"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_runny_nose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_psoriasis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>psoriasis</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Dermatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_small_dents_in_nails"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_silver_like_dusting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_peeling"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_inflammatory_nails"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_fluid_overload">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>fluid overload</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_chest_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>chest pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_drug_reaction">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>drug reaction</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Allergology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_spotting_urination"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_burning_micturition"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_stomach_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_malaria">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>malaria</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Infectious_Disease"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sweating"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_diarrhoea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_weight_gain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>weight gain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hypothyroidism">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hypothyroidism</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Endocrinology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_irritability"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_depression"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abnormal_menstruation"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cold_hands_and_feets"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weight_gain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_lethargy"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swollen_extremeties"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_puffy_face_and_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_brittle_nails"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_mood_swings"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dizziness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_enlarged_thyroid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_bronchial_asthma">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>bronchial asthma</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Pulmonology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_family_history"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cough"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_mucoid_sputum"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_breathlessness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hyperthyroidism">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hyperthyroidism</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Endocrinology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_restlessness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sweating"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fast_heart_rate"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_excessive_hunger"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_irritability"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_weakness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abnormal_menstruation"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_diarrhoea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weight_loss"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_mood_swings"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_dischromic_patches">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>dischromic patches</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hepatitis_a">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hepatitis a</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dark_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_diarrhoea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_mild_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_varicose_veins">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>varicose veins</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Vascular_Surgery"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_obesity"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swollen_legs"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swollen_blood_vessels"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cramps"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_bruising"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_prominent_veins_on_calf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Gastroenterology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Gastroenterology</med:departmentName>
+    <med:location>Building B</med:location>
+    <med:floor>3rd Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</med:availableSlots>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_migraine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>migraine</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Neurology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_excessive_hunger"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_irritability"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_blurred_and_distorted_vision"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_depression"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_indigestion"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_visual_disturbances"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_acidity"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_stiff_neck"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_runny_nose">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>runny nose</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_blurred_and_distorted_vision">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>blurred and distorted vision</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_high_fever">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>high fever</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_sunken_eyes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>sunken eyes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_tuberculosis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>tuberculosis</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Pulmonology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sweating"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chest_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cough"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weight_loss"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_malaise"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swelled_lymph_nodes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_mild_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_phlegm"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_breathlessness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_blood_in_sputum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Surgery">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Surgery</med:departmentName>
+    <med:location>Building A</med:location>
+    <med:floor>5th Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</med:availableSlots>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_osteoarthristis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>osteoarthristis</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Rheumatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_neck_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_hip_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swelling_joints"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_knee_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_painful_walking"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_allergy">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>allergy</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Allergology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_watering_from_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_continuous_sneezing"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_shivering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_dengue">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>dengue</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Infectious_Disease"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_back_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_malaise"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_pain_behind_the_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_red_spots_over_body"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_aids">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>aids</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Infectious_Disease"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_extra_marital_contacts"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_wasting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_patches_in_throat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_jaundice">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>jaundice</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dark_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weight_loss"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_fungal_infection">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>fungal infection</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Dermatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dischromic_patches"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nodal_skin_eruptions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_polyuria">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>polyuria</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hepatitis_e">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hepatitis e</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dark_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_coma"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_acute_liver_failure"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_stomach_bleeding"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_passage_of_gases">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>passage of gases</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_arthritis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>arthritis</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Rheumatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_stiff_neck"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_muscle_weakness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_movement_stiffness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swelling_joints"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_painful_walking"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_knee_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>knee pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Internal_Medicine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Internal Medicine</med:departmentName>
+    <med:location>Building B</med:location>
+    <med:floor>1st Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_dimorphic_hemmorhoids">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>dimorphic hemmorhoids</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Proctology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_pain_during_bowel_movements"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_irritation_in_anus"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_bloody_stool"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_constipation"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_pain_in_anal_region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_enlarged_thyroid">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>enlarged thyroid</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_loss_of_appetite">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>loss of appetite</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_gerd">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>gerd</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Gastroenterology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chest_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cough"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_ulcers_on_tongue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_acidity"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_stomach_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Cardiology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Cardiology</med:departmentName>
+    <med:location>Building B</med:location>
+    <med:floor>2nd Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_stomach_bleeding">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>stomach bleeding</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hepatitis_c">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hepatitis c</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_family_history"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_obesity">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>obesity</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hepatitis_b">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hepatitis b</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_receiving_unsterile_injections"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dark_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_receiving_blood_transfusion"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_malaise"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_lethargy"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellow_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_pain_during_bowel_movements">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>pain during bowel movements</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_yellow_urine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>yellow urine</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_chronic_cholestasis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>chronic cholestasis</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_skin_peeling">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>skin peeling</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Dermatology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Dermatology</med:departmentName>
+    <med:location>Building C</med:location>
+    <med:floor>1st Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_neck_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>neck pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_mood_swings">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>mood swings</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_silver_like_dusting">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>silver like dusting</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_pneumonia">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>pneumonia</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Pulmonology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sweating"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fast_heart_rate"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chest_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_cough"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_malaise"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_phlegm"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_rusty_sputum"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_breathlessness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_acne">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>acne</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Dermatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_blackheads"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_scurring"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_pus_filled_pimples"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_ENT">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>ENT</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_ENT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_cough">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>cough</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_slurred_speech">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>slurred speech</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_lethargy">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>lethargy</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#belongsToDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <rdfs:range rdf:resource="http://medbot.org/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Pulmonology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Pulmonology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Pulmonology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hypertension">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hypertension</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Cardiology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chest_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_lack_of_concentration"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_balance"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dizziness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_chills">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>chills</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_hip_joint_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>hip joint pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hepatitis_d">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hepatitis d</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_joint_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dark_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowing_of_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_small_dents_in_nails">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>small dents in nails</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_paroxysmal_positional_vertigo">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>paroxysmal positional vertigo</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_ENT"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_spinning_movements"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_balance"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_unsteadiness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_constipation">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>constipation</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_paralysis_brain_hemorrhage">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>paralysis (brain hemorrhage)</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Neurology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_altered_sensorium"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weakness_of_one_body_side"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_bruising">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>bruising</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_excessive_hunger">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>excessive hunger</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_typhoid">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>typhoid</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Infectious_Disease"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_belly_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_diarrhoea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_constipation"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chills"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_toxic_look_typhos"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#MedicalSpecialty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Spécialité Médicale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_yellowish_skin">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>yellowish skin</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_cramps">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>cramps</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_cervical_spondylosis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>cervical spondylosis</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Orthopedics"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weakness_in_limbs"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_neck_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_balance"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_back_pain"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dizziness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_joint_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>joint pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_swelling_joints">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>swelling joints</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_patches_in_throat">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>patches in throat</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_internal_itching">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>internal itching</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Infectious_Disease">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Infectious Disease</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Infectious_Disease"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_belly_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>belly pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_diabetes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>diabetes</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Endocrinology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_restlessness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_obesity"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_excessive_hunger"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_blurred_and_distorted_vision"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_polyuria"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_increased_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_lethargy"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_irregular_sugar_level"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_weight_loss"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_red_spots_over_body">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>red spots over body</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_history_of_alcohol_consumption">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>history of alcohol consumption</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_bladder_discomfort">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>bladder discomfort</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#treatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://medbot.org/ontology#Disease"/>
+    <rdfs:range rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Emergency">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Emergency</med:departmentName>
+    <med:location>Building A</med:location>
+    <med:floor>Ground Floor</med:floor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_swollen_legs">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>swollen legs</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_chicken_pox">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>chicken pox</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Infectious_Disease"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_malaise"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swelled_lymph_nodes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_mild_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_lethargy"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_red_spots_over_body"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_puffy_face_and_eyes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>puffy face and eyes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_scurring">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>scurring</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_loss_of_smell">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>loss of smell</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_weakness_in_limbs">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>weakness in limbs</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_ENT">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>ENT</med:departmentName>
+    <med:location>Building D</med:location>
+    <med:floor>1st Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_rusty_sputum">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>rusty sputum</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#diseaseName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_yellowing_of_eyes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>yellowing of eyes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_alcoholic_hepatitis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>alcoholic hepatitis</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Hepatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_distention_of_abdomen"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_history_of_alcohol_consumption"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_swelling_of_stomach"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fluid_overload"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellowish_skin"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Rheumatology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Rheumatology</med:departmentName>
+    <med:location>Building C</med:location>
+    <med:floor>3rd Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_stiff_neck">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>stiff neck</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Orthopedics">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Orthopedics</med:departmentName>
+    <med:location>Building D</med:location>
+    <med:floor>Ground Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_increased_appetite">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>increased appetite</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_abnormal_menstruation">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>abnormal menstruation</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_peptic_ulcer_disease">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>peptic ulcer disease</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Gastroenterology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_internal_itching"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_indigestion"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_passage_of_gases"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_loss_of_appetite"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_abdominal_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_irregular_sugar_level">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>irregular sugar level</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_General_Practice">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>General Practice</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_General_Medicine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_blood_in_sputum">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>blood in sputum</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Hepatology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Hepatology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Gastroenterology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_extra_marital_contacts">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>extra marital contacts</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_throat_irritation">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>throat irritation</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_sinus_pressure">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>sinus pressure</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Infectious_Disease">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Infectious Disease</med:departmentName>
+    <med:location>Building A</med:location>
+    <med:floor>3rd Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_impetigo">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>impetigo</med:diseaseName>
+    <med:urgencyLevel>low</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Dermatology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_high_fever"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_blister"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_red_sore_around_nose"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_skin_rash"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_yellow_crust_ooze"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_vomiting">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>vomiting</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_fatigue">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>fatigue</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_hypoglycemia">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>hypoglycemia</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Endocrinology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sweating"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_headache"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_excessive_hunger"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_drying_and_tingling_lips"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_irritability"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_fatigue"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_blurred_and_distorted_vision"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_palpitations"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_slurred_speech"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_nausea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_anxiety"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_fast_heart_rate">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>fast heart rate</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_brittle_nails">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>brittle nails</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Urology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Urology</med:departmentName>
+    <med:location>Building D</med:location>
+    <med:floor>2nd Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_toxic_look_typhos">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>toxic look (typhos)</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Neurology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Neurology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Neurology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_General_Medicine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>General Medicine</med:departmentName>
+    <med:location>Building B</med:location>
+    <med:floor>Ground Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Urology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Urology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Urology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Allergology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Allergology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Internal_Medicine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_acute_liver_failure">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>acute liver failure</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_weight_loss">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>weight loss</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_pus_filled_pimples">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>pus filled pimples</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_indigestion">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>indigestion</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_acidity">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>acidity</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_redness_of_eyes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>redness of eyes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_dehydration">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>dehydration</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_restlessness">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>restlessness</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_continuous_feel_of_urine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>continuous feel of urine</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_inflammatory_nails">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>inflammatory nails</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_blackheads">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>blackheads</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_urinary_tract_infection">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>urinary tract infection</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Urology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_continuous_feel_of_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_foul_smell_of_urine"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_bladder_discomfort"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_burning_micturition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_skin_rash">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>skin rash</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_receiving_unsterile_injections">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>receiving unsterile injections</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_phlegm">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>phlegm</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_unsteadiness">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>unsteadiness</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_diarrhoea">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>diarrhoea</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_heart_attack">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>heart attack</med:diseaseName>
+    <med:urgencyLevel>high</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Cardiology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_breathlessness"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sweating"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_chest_pain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_ulcers_on_tongue">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>ulcers on tongue</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_nodal_skin_eruptions">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>nodal skin eruptions</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_distention_of_abdomen">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>distention of abdomen</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#availableSlots">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_continuous_sneezing">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>continuous sneezing</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_watering_from_eyes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>watering from eyes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_breathlessness">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>breathlessness</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_pain_in_anal_region">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>pain in anal region</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Pulmonology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Pulmonology</med:departmentName>
+    <med:location>Building B</med:location>
+    <med:floor>4th Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Gastroenterology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Gastroenterology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Gastroenterology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_yellow_crust_ooze">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>yellow crust ooze</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#symptomName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_congestion">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>congestion</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_swelled_lymph_nodes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>swelled lymph nodes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_abdominal_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>abdominal pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Neurology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Neurology</med:departmentName>
+    <med:location>Building A</med:location>
+    <med:floor>4th Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#hasSymptom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://medbot.org/ontology#Disease"/>
+    <rdfs:range rdf:resource="http://medbot.org/ontology#Symptom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Disease_gastroenteritis">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Disease"/>
+    <med:diseaseName>gastroenteritis</med:diseaseName>
+    <med:urgencyLevel>medium</med:urgencyLevel>
+    <med:treatedBy rdf:resource="http://medbot.org/instances#Spec_Gastroenterology"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_sunken_eyes"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_diarrhoea"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_vomiting"/>
+    <med:hasSymptom rdf:resource="http://medbot.org/instances#Sym_dehydration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_visual_disturbances">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>visual disturbances</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_irritation_in_anus">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>irritation in anus</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_receiving_blood_transfusion">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>receiving blood transfusion</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Proctology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Proctology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Surgery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_depression">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>depression</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_muscle_weakness">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>muscle weakness</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_shivering">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>shivering</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_mild_fever">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>mild fever</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Cardiology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Cardiology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Cardiology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_spotting_urination">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>spotting urination</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_mucoid_sputum">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>mucoid sputum</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Vascular_Surgery">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Vascular Surgery</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Surgery"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Rheumatology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Rheumatology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Rheumatology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_movement_stiffness">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>movement stiffness</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_family_history">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>family history</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#severityLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_burning_micturition">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>burning micturition</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_pain_behind_the_eyes">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>pain behind the eyes</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_palpitations">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>palpitations</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_anxiety">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>anxiety</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_sweating">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>sweating</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_blister">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>blister</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_bloody_stool">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>bloody stool</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Dept_Endocrinology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Department"/>
+    <med:departmentName>Endocrinology</med:departmentName>
+    <med:location>Building C</med:location>
+    <med:floor>2nd Floor</med:floor>
+    <med:availableSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</med:availableSlots>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_prominent_veins_on_calf">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>prominent veins on calf</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_spinning_movements">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>spinning movements</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_dark_urine">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>dark urine</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#departmentName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_coma">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>coma</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_muscle_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>muscle pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_loss_of_balance">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>loss of balance</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_swollen_extremeties">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>swollen extremeties</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#Symptom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Symptôme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_muscle_wasting">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>muscle wasting</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_back_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>back pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_drying_and_tingling_lips">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>drying and tingling lips</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#floor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_headache">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>headache</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_dizziness">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>dizziness</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Orthopedics">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Orthopedics</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Orthopedics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_swelling_of_stomach">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>swelling of stomach</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#Disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Maladie</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_malaise">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>malaise</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_irritability">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>irritability</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_swollen_blood_vessels">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>swollen blood vessels</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Endocrinology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Endocrinology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Endocrinology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_red_sore_around_nose">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>red sore around nose</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_stomach_pain">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>stomach pain</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_itching">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>itching</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_altered_sensorium">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>altered sensorium</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_nausea">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>nausea</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_painful_walking">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>painful walking</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_lack_of_concentration">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>lack of concentration</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</med:severityLevel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Spec_Dermatology">
+    <rdf:type rdf:resource="http://medbot.org/ontology#MedicalSpecialty"/>
+    <med:specialtyName>Dermatology</med:specialtyName>
+    <med:belongsToDepartment rdf:resource="http://medbot.org/instances#Dept_Dermatology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#urgencyLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/ontology#location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://medbot.org/instances#Sym_cold_hands_and_feets">
+    <rdf:type rdf:resource="http://medbot.org/ontology#Symptom"/>
+    <med:symptomName>cold hands and feets</med:symptomName>
+    <med:severityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</med:severityLevel>
+  </rdf:Description>
+</rdf:RDF>
