@@ -126,12 +126,12 @@ medbot/
 ├── src/
 │   ├── data_processing.py             # Pipeline de traitement des données
 │   ├── build_graph.py                 # Générateur d'ontologie RDF
-│   ├── nlp_processor.py               # Extraction NLP des symptômes ✨
-│   ├── query_engine.py                # Moteur de requêtes SPARQL ✨
-│   └── llm_engine.py                  # RAG + Intégration Ollama ✨
+│   ├── nlp_processor.py               # Extraction NLP des symptômes 
+│   ├── query_engine.py                # Moteur de requêtes SPARQL 
+│   └── llm_engine.py                  # RAG + Intégration Ollama 
 │
 ├── app/
-│   └── main.py                        # Interface Streamlit ✨
+│   └── main.py                        # Interface Streamlit 
 │
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb      # Analyse exploratoire
@@ -141,10 +141,8 @@ medbot/
 ├── Dockerfile                         # Build de l'application
 ├── requirements.txt                   # Dépendances Python
 ├── STARTUP.md                         # Guide de démarrage détaillé
-└── quick_start.ps1                    # Script de lancement rapide ✨
+└── quick_start.ps1                    # Script de lancement rapide 
 ```
-
-✨ = Fichiers nouvellement implémentés
 
 ---
 
@@ -298,19 +296,6 @@ Ce script valide :
 > - Les recommandations sont basées sur des données structurées
 > - Toujours consulter un professionnel de santé qualifié
 > - En cas d'urgence (douleur thoracique, difficultés respiratoires sévères), appeler le 15/112
-
----
-
-
-
----
-
-## 📞 Support
-
-Pour toute question ou problème :
-- 📧 Email : support@medbot.com (exemple)
-- 📖 Documentation : Voir [docs/](docs/)
-- 🐛 Issues : GitHub Issues
 
 ---
 
